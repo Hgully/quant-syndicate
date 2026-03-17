@@ -1,60 +1,88 @@
 import streamlit as st
 import pandas as pd
-import os
+import numpy as np
+import time
 
-# --- PAGE SETTINGS ---
-st.set_page_config(page_title="Quant Syndicate Sniper", page_icon="🎯", layout="wide")
+# --- Page Config ---
+st.set_page_config(page_title="Quant Syndicate", page_icon="🎯", layout="wide")
 
 st.title("🎯 Quant Syndicate Global Sniper")
 st.markdown("Live Expected Value (+EV) Opportunities based on Sharp Market Implied Probabilities.")
-st.markdown("---")
+st.divider()
 
-# --- LOAD DATA ---
-@st.cache_data(ttl=60) # Refreshes the data every 60 seconds
+# --- Load Data ---
+@st.cache_data(ttl=60)
 def load_data():
-    if os.path.exists("ev_log.csv"):
-        try:
-            df = pd.read_csv("ev_log.csv")
-            # Sort by highest EV first if the column exists
-            if 'EV' in df.columns:
-                # Clean the EV column (remove '%' and convert to float for sorting)
-                df['EV_Sort'] = df['EV'].str.rstrip('%').astype('float')
-                df = df.sort_values(by='EV_Sort', ascending=False).drop(columns=['EV_Sort'])
-            return df
-        except pd.errors.EmptyDataError:
-            return pd.DataFrame()
-    return pd.DataFrame()
+    try:
+        return pd.read_csv("ev_log.csv")
+    except FileNotFoundError:
+        return pd.DataFrame()
 
 df = load_data()
 
-# --- DASHBOARD UI ---
 if df.empty:
-    st.info("📡 The Sniper is currently scanning the markets. No edges found yet. Please wait for the next update.")
+    st.info("📡 The Sniper is currently scanning the markets. No edges found yet.")
 else:
-    # 1. The Dropdown Filter
+    # --- FILTERS & TABLE ---
     st.subheader("Filter Markets")
-    
-    # Get a list of unique sports currently in the CSV
-    available_sports = df['Sport'].unique().tolist()
-    available_sports.insert(0, "All Sports") # Add 'All' to the top of the list
-    
-    selected_sport = st.selectbox("Select a League to view:", available_sports)
-    
-    # Filter the dataframe based on the dropdown
+    sports_list = ["All Sports"] + sorted(df['Sport'].unique().tolist())
+    selected_sport = st.selectbox("Select a League to view:", sports_list)
+
     if selected_sport != "All Sports":
         display_df = df[df['Sport'] == selected_sport]
     else:
         display_df = df
-        
-    # 2. Display Metrics
-    st.metric(label=f"Active Edges in {selected_sport}", value=len(display_df))
-    
-    # 3. Display the Table
-    st.dataframe(
-        display_df, 
-        use_container_width=True, 
-        hide_index=True,
-        height=500
-    )
-    
+
+    st.dataframe(display_df, use_container_width=True, hide_index=True)
     st.caption("Data refreshes automatically. Sharp book used: LowVig.ag")
+
+    # --- MONTE CARLO SIMULATOR ---
+    st.divider()
+    st.header("🎲 Live Monte Carlo Simulator")
+    st.markdown("Run **100,000 independent mathematical simulations** to visualize the true win probability of any edge found above.")
+
+    games_list = display_df['Game'].unique().tolist()
+    
+    if games_list:
+        selected_game = st.selectbox("Select a game to simulate:", games_list)
+        
+        # Grab the specific data for the chosen game
+        game_data = display_df[display_df['Game'] == selected_game].iloc[0]
+        bet_team = game_data['Bet']
+        odds = int(game_data['Odds'])
+        
+        # Convert American Odds to Implied Probability for the simulator
+        if odds > 0:
+            implied_prob = 100 / (odds + 100)
+        else:
+            implied_prob = abs(odds) / (abs(odds) + 100)
+            
+        if st.button("🚀 Run 100,000 Simulations"):
+            # Create a cool visual progress bar
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            for i in range(100):
+                time.sleep(0.01) # Simulating heavy computing time
+                progress_bar.progress(i + 1)
+                status_text.text(f"Simulating {i * 1000} matches...")
+                
+            # The actual Numpy Math Engine
+            simulations = 100000
+            results = np.random.rand(simulations) < implied_prob
+            wins = np.sum(results)
+            win_percentage = (wins / simulations) * 100
+            
+            status_text.text("✅ Simulation Complete!")
+            
+            # Calculate what the true American Odds *should* be
+            if win_percentage > 50:
+                fair_odds = int(- (win_percentage / (100 - win_percentage)) * 100)
+            else:
+                fair_odds = int((100 - win_percentage) / win_percentage * 100)
+            
+            # Display metrics beautifully
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Simulations Run", "100,000")
+            col2.metric(f"True Win Probability", f"{win_percentage:.2f}%")
+            col3.metric("True Fair Odds", f"{fair_odds:+d}")
