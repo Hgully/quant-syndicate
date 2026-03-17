@@ -50,6 +50,7 @@ else:
         game_data = display_df[display_df['Game'] == selected_game].iloc[0]
         bet_team = game_data['Bet']
         odds = int(game_data['Odds'])
+        game_sport = game_data['Sport']
         
         # Determine opponent
         teams = selected_game.split(' @ ')
@@ -101,48 +102,26 @@ else:
             st.markdown("**Patch Notes Active:** 'Blowout Variance' v3.1")
             st.markdown(f"**System Flags Triggered:** Away Underdog Floor, Sharp Action Delta Detection (+15.30% detected on {bet_team}).")
             
+            # Determine the correct mock scores based on the sport
+            if "NBA" in game_sport or "NCAAB" in game_sport:
+                mock_score = "115.4 - 112.1"
+                mock_exact = "115-112 (4%), 110-108 (3%)"
+            elif "NFL" in game_sport or "NCAAF" in game_sport:
+                mock_score = "24.5 - 21.2"
+                mock_exact = "24-21 (8%), 27-24 (6%)"
+            elif "MLB" in game_sport:
+                mock_score = "5.2 - 4.1"
+                mock_exact = "5-4 (10%), 4-3 (8%)"
+            elif "NHL" in game_sport:
+                mock_score = "3.2 - 2.8"
+                mock_exact = "3-2 (12%), 4-3 (10%)"
+            elif "Soccer" in game_sport:
+                mock_score = "2.1 - 1.8"
+                mock_exact = "2-1 (14%), 1-1 (12%)"
+            else:
+                mock_score = "Win/Loss Only"
+                mock_exact = "N/A"
+
             # --- Pre-Table 1 Data ---
             st.markdown("### 📊 Pre-Table 1 Data")
-            
-            # Widen the 2nd and 3rd columns so the text has more room to breathe
-            col1, col2, col3 = st.columns([1, 1.5, 1.5]) 
-            
-            col1.metric("Simulated Environments", "100k")
-            
-            # Move team names to the smaller label, and the score to the giant number
-            col2.metric(f"Est. Score ({bet_team} vs {opponent})", "2.1 - 1.8")
-            
-            col3.metric("Top 3 Exact Scores", "2-1 (14%), 1-1 (12%), 3-1 (9%)")
-            
-            st.caption("*Note: Exact scoring requires an upgraded Poisson API data feed. Currently displaying projected baselines.*")
-            
-            # --- Table 1: MC Sims ---
-            st.markdown("### 📋 Table 1: MC Sims (n=100k)")
-            
-            # Building the visual DataFrame
-            table1_data = {
-                "Market": ["Moneyline", "Moneyline", "Spread (Proj)", "Spread (Proj)", "Total (Proj)", "Total (Proj)"],
-                "Selection": [bet_team, opponent, f"{bet_team} -1.5", f"{opponent} +1.5", "Over 3.5", "Under 3.5"],
-                "Prob (%)": [f"{win_percentage:.1f}%", f"{(100-win_percentage):.1f}%", "58.0%", "42.0%", "55.0%", "45.0%"],
-                "Fair Line": [fair_odds_str, f"{-fair_odds if fair_odds > 0 else abs(fair_odds)}", "-138", "+138", "-122", "+122"],
-                "Cur Line": [cur_odds_str, "N/A", "+105", "-125", "+110", "-130"],
-                "Edge (EV)": [game_data['EV'], "N/A", "+18.9%", "-15.0%", "+15.5%", "-20.2%"]
-            }
-            df_table1 = pd.DataFrame(table1_data)
-            st.dataframe(df_table1, use_container_width=True, hide_index=True)
-            
-            # --- Table 2: Master Quant Card ---
-            st.markdown("### 🗃️ Table 2: Master Quant Card")
-            table2_data = {
-                "Market": ["Moneyline", "Total", "Team Total", "Spread", "Player PRA"],
-                "Selection": [bet_team, "Over 3.5", f"{bet_team} O 2.5", f"{bet_team} -1.5", "Star Player O 0.5 G/A"],
-                "Win Prob": [f"{win_percentage:.1f}%", "55.0%", "53.0%", "58.0%", "62.0%"],
-                "Fair Odds": [fair_odds_str, "-122", "-113", "-138", "-163"],
-                "Cur": [cur_odds_str, "+110", "+135", "+105", "-120"],
-                "Edge (EV)": [game_data['EV'], "+15.5%", "+24.5%", "+18.9%", "+13.6%"],
-                "QES": ["8.2", "9.4", "9.6", "9.8", "8.5"],
-                "Verdict": ["🥇", "💎", "💎", "💎", "🥇"],
-                "Rating": ["⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]
-            }
-            df_table2 = pd.DataFrame(table2_data)
-            st.dataframe(df_table2, use_container_width=True, hide_index=True)
+            col1, col2, col3 = st.columns(
