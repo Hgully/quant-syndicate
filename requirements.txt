@@ -1,5 +1,7 @@
 streamlit
 pandas
 numpy
-nba_api
+scipy
 requests
+nba_api
+sportsipy
