@@ -124,4 +124,4 @@ else:
 
             # --- Pre-Table 1 Data ---
             st.markdown("### 📊 Pre-Table 1 Data")
-            col1, col2, col3 = st.columns(
+            col1, col2, col3 = st.columns([1, 1.5, 1.5])
