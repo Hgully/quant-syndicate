@@ -103,10 +103,17 @@ else:
             
             # --- Pre-Table 1 Data ---
             st.markdown("### 📊 Pre-Table 1 Data")
-            col1, col2, col3 = st.columns(3)
-            col1.metric("Simulated Game Environments", "100,000")
-            col2.metric("Average Score", f"Est. {bet_team} 2.1 - 1.8 {opponent}*")
-            col3.metric("Top 3 Exact Scores", "2-1 (14%), 1-1 (12%), 3-1 (9%)*")
+            
+            # Widen the 2nd and 3rd columns so the text has more room to breathe
+            col1, col2, col3 = st.columns([1, 1.5, 1.5]) 
+            
+            col1.metric("Simulated Environments", "100k")
+            
+            # Move team names to the smaller label, and the score to the giant number
+            col2.metric(f"Est. Score ({bet_team} vs {opponent})", "2.1 - 1.8")
+            
+            col3.metric("Top 3 Exact Scores", "2-1 (14%), 1-1 (12%), 3-1 (9%)")
+            
             st.caption("*Note: Exact scoring requires an upgraded Poisson API data feed. Currently displaying projected baselines.*")
             
             # --- Table 1: MC Sims ---
