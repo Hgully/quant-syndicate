@@ -15,7 +15,8 @@ EV_THRESHOLDS = {
     "MLB": 0.015, "NHL": 0.02, "SOCCER": 0.025, "UFC": 0.03, "TENNIS": 0.02
 }
 
-API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" # <-- PASTE YOUR KEY HERE
+# ---> PASTE YOUR API KEY HERE <---
+API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" 
 
 SPORT_CONFIGS = {
     "basketball_ncaab": {"name": "NCAAB", "avg": 75.0, "var": 10.0, "url": "https://www.sports-reference.com/cbb/seasons/2026-ratings.html"},
@@ -23,12 +24,12 @@ SPORT_CONFIGS = {
     "icehockey_nhl":    {"name": "NHL",   "avg": 3.2,  "var": 1.5,  "url": "https://www.hockey-reference.com/leagues/NHL_2026.html"},
     "baseball_mlb":     {"name": "MLB",   "avg": 4.5,  "var": 2.5,  "url": "https://www.baseball-reference.com/leagues/majors/2026-standings.shtml"},
     "soccer_epl":       {"name": "SOCCER","avg": 1.5,  "var": 1.2,  "url": "https://fbref.com/en/comps/9/stats/Premier-League-Stats"},
-    "mma_mixed_martial_arts": {"name": "UFC", "avg": 50.0, "var": 10.0, "url": ""},
+    "mma_mixed_martial_arts": {"name": "UFC", "avg": 50.0, "var": 10.0, "url": "https://www.tsn.ca/mma/ufc-rankings-1.1553535"},
     "tennis_atp":       {"name": "TENNIS","avg": 50.0, "var": 10.0, "url": ""}
 }
 
 # ==========================================
-# 2. THE FAIL-SAFE INTELLIGENCE SYSTEM
+# 2. INTELLIGENCE GATHERING (LIVE + BACKUP)
 # ==========================================
 def load_backup_intel(sport_name):
     if os.path.exists("syndicate_ratings.csv"):
@@ -41,17 +42,19 @@ def load_backup_intel(sport_name):
 
 def fetch_global_intelligence():
     intel = {}
-    print("🧠 COLLECTING GLOBAL INTELLIGENCE...")
+    print("🧠 GATHERING GLOBAL INTELLIGENCE...")
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
     
-    for sport_key in ["basketball_ncaab", "basketball_nba", "icehockey_nhl", "soccer_epl"]:
+    for sport_key in ["basketball_ncaab", "basketball_nba", "icehockey_nhl", "soccer_epl", "mma_mixed_martial_arts"]:
         config = SPORT_CONFIGS[sport_key]
+        if not config["url"]: continue
+        
         try:
-            time.sleep(1.5)
+            time.sleep(1.5) # Anti-bot delay
             res = requests.get(config["url"], headers=headers, timeout=15)
             
             if res.status_code != 200:
-                print(f"   ⚠️ {config['name']} Blocked ({res.status_code}). Loading Backup Vault...")
+                print(f"   ⚠️ {config['name']} Blocked. Using Backup Vault.")
                 intel[config["name"]] = load_backup_intel(config["name"])
                 continue
 
@@ -59,22 +62,35 @@ def fetch_global_intelligence():
             df = df_list[0]
             if isinstance(df.columns, pd.MultiIndex): df.columns = df.columns.get_level_values(-1)
             
-            # Mapping Logic
-            if config["name"] == "NCAAB": intel["NCAAB"] = pd.Series(df.SRS.values, index=df['School']).to_dict()
-            elif config["name"] == "NBA": intel["NBA"] = pd.Series(df.SRS.values, index=df['Western Conference']).to_dict()
-            elif config["name"] == "NHL": intel["NHL"] = pd.Series(df.SRS.values, index=df['Unnamed: 0']).to_dict()
-            elif config["name"] == "SOCCER": intel["SOCCER"] = pd.Series(df.xG.values, index=df['Squad']).to_dict()
+            if config["name"] == "NCAAB": 
+                intel["NCAAB"] = pd.Series(df.SRS.values, index=df['School']).to_dict()
+            elif config["name"] == "NBA": 
+                intel["NBA"] = pd.Series(df.SRS.values, index=df['Western Conference']).to_dict()
+            elif config["name"] == "NHL": 
+                intel["NHL"] = pd.Series(df.SRS.values, index=df['Unnamed: 0']).to_dict()
+            elif config["name"] == "SOCCER": 
+                intel["SOCCER"] = pd.Series(df.xG.values, index=df['Squad']).to_dict()
+            elif config["name"] == "UFC":
+                ufc_map = {}
+                for d in df_list:
+                    for i, r in d.iterrows():
+                        try:
+                            name, rank = str(r[1]), str(r[0])
+                            score = 10.0 if 'C' in rank else 9.5 - (float(rank) * 0.25) if rank.isdigit() else 5.0
+                            ufc_map[name] = score
+                        except: continue
+                intel["UFC"] = ufc_map
             
-            print(f"   ✅ {config['name']} Intelligence Cached (Live).")
+            print(f"   ✅ {config['name']} Intelligence Cached.")
             
         except:
-            print(f"   ⚠️ {config['name']} Scrape Error. Loading Backup Vault...")
+            print(f"   ⚠️ {config['name']} Scrape Error. Using Backup Vault.")
             intel[config["name"]] = load_backup_intel(config["name"])
 
     return intel
 
 # ==========================================
-# 3. MATH ENGINE & MONTE CARLO
+# 3. MONTE CARLO CORE
 # ==========================================
 def calculate_ev(win_prob, ml):
     payout = (ml/100 + 1) if ml > 0 else (100/abs(ml) + 1)
@@ -91,6 +107,7 @@ def simulate_match(away, home, intel, config):
         return 0.0
 
     a_r, h_r = get_rating(away), get_rating(home)
+    # HFA: Home Court (3.5), NBA (2.4), NHL/MLB/Other (0.2)
     hfa = 3.5 if config["name"] == "NCAAB" else 2.4 if config["name"] == "NBA" else 0.2
     
     a_sims = np.random.normal(config["avg"] + a_r, config["var"], 100000)
@@ -98,7 +115,7 @@ def simulate_match(away, home, intel, config):
     return np.sum(h_sims > a_sims) / 100000
 
 # ==========================================
-# 4. MASTER EXECUTION
+# 4. EXECUTION LOOP
 # ==========================================
 def run_global_engine():
     print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] 🚀 SYNDICATE ENGINE INITIALIZED")
@@ -144,9 +161,9 @@ def run_global_engine():
         pd.DataFrame(results).to_csv("ev_log.csv", index=False)
         try:
             subprocess.run(["git", "add", "."], check=True)
-            subprocess.run(["git", "commit", "-m", "Fail-Safe Intel Sync"], check=True)
+            subprocess.run(["git", "commit", "-m", "Master Global Intelligence Sync"], check=True)
             subprocess.run(["git", "push"], check=True)
-            print("\n☁️ SYNDICATE TERMINAL UPDATED (BACKUP ACTIVE).")
+            print("\n☁️ SYNDICATE TERMINAL UPDATED (ALL SYSTEMS GO).")
         except: print("⚠️ Git push failed.")
 
 if __name__ == "__main__":
