@@ -1,21 +1,27 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import time
-from scipy.stats import poisson, norm
 
-# --- Page Config ---
-st.set_page_config(page_title="Quant Sports AI Terminal", page_icon="🎯", layout="wide")
-
-# --- Load & Prep Data ---
-@st.cache_data(ttl=60)
+# --- UPDATE THIS SECTION IN YOUR DASHBOARD.PY ---
+@st.cache_data(ttl=60) # This tells Streamlit to refresh every 60 seconds
 def load_data():
+    # Replace 'hgully' and 'quant-syndicate' with your actual GitHub info
+    RAW_URL = "https://raw.githubusercontent.com/hgully/quant-syndicate/main/ev_log.csv"
+    
     try:
-        df = pd.read_csv("ev_log.csv")
-        if 'Result' not in df.columns: df['Result'] = "---"
-        if 'QES' not in df.columns: df['QES'] = 0.0
+        # We add a random 'query parameter' to the end to bypass GitHub's cache
+        import time
+        df = pd.read_csv(f"{RAW_URL}?nocache={time.time()}")
+        
+        # Ensure column names are clean
+        df.columns = df.columns.str.strip()
         return df
-    except: return pd.DataFrame()
+    except Exception as e:
+        st.error(f"Could not find the cloud database: {e}")
+        # Fallback to local if GitHub fails
+        try:
+            return pd.read_csv("ev_log.csv")
+        except:
+            return pd.DataFrame()
 
 df = load_data()
 
