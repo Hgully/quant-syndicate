@@ -2,164 +2,152 @@ import pandas as pd
 import numpy as np
 import requests
 import datetime
-import os
 import subprocess
+import io
+import time
+import os
 
 # ==========================================
-# 1. QUANT SYNDICATE MASTER PROTOCOL
+# 1. THE SYNDICATE MASTER PROTOCOL
 # ==========================================
 EV_THRESHOLDS = {
-    "NCAAB":  {"Spread": 0.03,  "Total": 0.03,  "ML": 0.035},
-    "NCAAF":  {"Spread": 0.03,  "Total": 0.03,  "ML": 0.035},
-    "NFL":    {"Spread": 0.015, "Total": 0.015, "ML": 0.02},
-    "NBA":    {"Spread": 0.02,  "Total": 0.02,  "ML": 0.025},
-    "MLB":    {"Spread": 0.02,  "Total": 0.02,  "ML": 0.015}, 
-    "NHL":    {"Spread": 0.03,  "Total": 0.025, "ML": 0.02},  
-    "SOCCER": {"Spread": 0.02,  "Total": 0.02,  "ML": 0.025}, 
-    "UFC":    {"Spread": 0.00,  "Total": 0.03,  "ML": 0.03}   
+    "NCAAB": 0.035, "NBA": 0.025, "NFL": 0.02, "NCAAF": 0.035,
+    "MLB": 0.015, "NHL": 0.02, "SOCCER": 0.025, "UFC": 0.03, "TENNIS": 0.02
 }
 
-API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" 
+API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" # <-- PASTE YOUR KEY HERE
+
+SPORT_CONFIGS = {
+    "basketball_ncaab": {"name": "NCAAB", "avg": 75.0, "var": 10.0, "url": "https://www.sports-reference.com/cbb/seasons/2026-ratings.html"},
+    "basketball_nba":   {"name": "NBA",   "avg": 115.0,"var": 12.0, "url": "https://www.basketball-reference.com/leagues/NBA_2026_standings.html"},
+    "icehockey_nhl":    {"name": "NHL",   "avg": 3.2,  "var": 1.5,  "url": "https://www.hockey-reference.com/leagues/NHL_2026.html"},
+    "baseball_mlb":     {"name": "MLB",   "avg": 4.5,  "var": 2.5,  "url": "https://www.baseball-reference.com/leagues/majors/2026-standings.shtml"},
+    "soccer_epl":       {"name": "SOCCER","avg": 1.5,  "var": 1.2,  "url": "https://fbref.com/en/comps/9/stats/Premier-League-Stats"},
+    "mma_mixed_martial_arts": {"name": "UFC", "avg": 50.0, "var": 10.0, "url": ""},
+    "tennis_atp":       {"name": "TENNIS","avg": 50.0, "var": 10.0, "url": ""}
+}
 
 # ==========================================
-# 2. THE MARKET INTELLIGENCE API (PULL LIVE ODDS)
+# 2. THE FAIL-SAFE INTELLIGENCE SYSTEM
 # ==========================================
-def get_live_vegas_odds(sport="basketball_ncaab"):
-    print(f"📡 Pinging Vegas API for {sport} lines...")
-    url = f"https://api.the-odds-api.com/v4/sports/{sport}/odds/"
-    params = {
-        'apiKey': API_KEY,
-        'regions': 'us',
-        'markets': 'h2h', # Just pulling Moneyline to test the plumbing tonight
-        'oddsFormat': 'american'
-    }
+def load_backup_intel(sport_name):
+    if os.path.exists("syndicate_ratings.csv"):
+        try:
+            df = pd.read_csv("syndicate_ratings.csv")
+            df_sport = df[df['Sport'] == sport_name]
+            return pd.Series(df_sport.Rating.values, index=df_sport.Team).to_dict()
+        except: return {}
+    return {}
+
+def fetch_global_intelligence():
+    intel = {}
+    print("🧠 COLLECTING GLOBAL INTELLIGENCE...")
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
     
-    response = requests.get(url, params=params)
-    
-    if response.status_code != 200:
-        print(f"❌ API Error: {response.status_code}. Check your API Key.")
-        return []
-        
-    odds_data = response.json()
-    live_games = []
-    
-    for game in odds_data:
-        home_team = game['home_team']
-        away_team = game['away_team']
-        
-        best_home_ml = -10000
-        best_away_ml = -10000
-        
-        # Scan all bookmakers for the absolute best price (Line Shopping)
-        for book in game.get('bookmakers', []):
-            for market in book.get('markets', []):
-                if market['key'] == 'h2h':
-                    for outcome in market['outcomes']:
-                        if outcome['name'] == home_team and outcome['price'] > best_home_ml:
-                            best_home_ml = outcome['price']
-                        elif outcome['name'] == away_team and outcome['price'] > best_away_ml:
-                            best_away_ml = outcome['price']
-                            
-        # Only add games that have actual odds listed
-        if best_home_ml != -10000 and best_away_ml != -10000:
-            live_games.append({
-                "Sport": "NCAAB",
-                "Game": f"{away_team} @ {home_team}",
-                "Home Team": home_team,
-                "Away Team": away_team,
-                "Home ML Best": best_home_ml,
-                "Away ML Best": best_away_ml
-            })
+    for sport_key in ["basketball_ncaab", "basketball_nba", "icehockey_nhl", "soccer_epl"]:
+        config = SPORT_CONFIGS[sport_key]
+        try:
+            time.sleep(1.5)
+            res = requests.get(config["url"], headers=headers, timeout=15)
             
-    print(f"✅ Secured live lines for {len(live_games)} games.")
-    return live_games
+            if res.status_code != 200:
+                print(f"   ⚠️ {config['name']} Blocked ({res.status_code}). Loading Backup Vault...")
+                intel[config["name"]] = load_backup_intel(config["name"])
+                continue
+
+            df_list = pd.read_html(io.StringIO(res.text), flavor='lxml')
+            df = df_list[0]
+            if isinstance(df.columns, pd.MultiIndex): df.columns = df.columns.get_level_values(-1)
+            
+            # Mapping Logic
+            if config["name"] == "NCAAB": intel["NCAAB"] = pd.Series(df.SRS.values, index=df['School']).to_dict()
+            elif config["name"] == "NBA": intel["NBA"] = pd.Series(df.SRS.values, index=df['Western Conference']).to_dict()
+            elif config["name"] == "NHL": intel["NHL"] = pd.Series(df.SRS.values, index=df['Unnamed: 0']).to_dict()
+            elif config["name"] == "SOCCER": intel["SOCCER"] = pd.Series(df.xG.values, index=df['Squad']).to_dict()
+            
+            print(f"   ✅ {config['name']} Intelligence Cached (Live).")
+            
+        except:
+            print(f"   ⚠️ {config['name']} Scrape Error. Loading Backup Vault...")
+            intel[config["name"]] = load_backup_intel(config["name"])
+
+    return intel
 
 # ==========================================
-# 3. MATH ENGINE (AMERICAN ODDS)
+# 3. MATH ENGINE & MONTE CARLO
 # ==========================================
-def calculate_ev(win_prob, american_odds):
-    if american_odds > 0:
-        payout_multiplier = (american_odds / 100.0) + 1.0
-    else:
-        payout_multiplier = (100.0 / abs(american_odds)) + 1.0
-    return (win_prob * payout_multiplier) - 1.0
+def calculate_ev(win_prob, ml):
+    payout = (ml/100 + 1) if ml > 0 else (100/abs(ml) + 1)
+    return (win_prob * payout) - 1
+
+def simulate_match(away, home, intel, config):
+    sport_intel = intel.get(config["name"], {})
+    
+    def get_rating(team_name):
+        for key, val in sport_intel.items():
+            if str(team_name) in str(key) or str(key) in str(team_name):
+                try: return float(val)
+                except: return 0.0
+        return 0.0
+
+    a_r, h_r = get_rating(away), get_rating(home)
+    hfa = 3.5 if config["name"] == "NCAAB" else 2.4 if config["name"] == "NBA" else 0.2
+    
+    a_sims = np.random.normal(config["avg"] + a_r, config["var"], 100000)
+    h_sims = np.random.normal(config["avg"] + h_r + hfa, config["var"], 100000)
+    return np.sum(h_sims > a_sims) / 100000
 
 # ==========================================
-# 4. MONTE CARLO SIMULATOR (n=100k)
+# 4. MASTER EXECUTION
 # ==========================================
-def simulate_game(away_rating, home_rating, simulations=100000):
-    away_scores = np.random.normal(loc=away_rating, scale=10.0, size=simulations)
-    home_scores = np.random.normal(loc=home_rating, scale=10.0, size=simulations)
-    
-    home_ml_prob = np.sum(home_scores > away_scores) / simulations
-    away_ml_prob = np.sum(away_scores > home_scores) / simulations
-    
-    return {"Home ML Prob": home_ml_prob, "Away ML Prob": away_ml_prob}
-
-# ==========================================
-# 5. THE BET GAUNTLET (EVALUATOR)
-# ==========================================
-def evaluate_play(sport, market_type, win_prob, american_odds):
-    ev = calculate_ev(win_prob, american_odds)
-    threshold = EV_THRESHOLDS.get(sport, EV_THRESHOLDS["NCAAB"]).get(market_type, 0.03)
-    
-    if ev >= (threshold + 0.02):
-        rating = "🥇⭐⭐⭐⭐ Strong Play"
-    elif ev >= threshold:
-        rating = "🥈⭐⭐⭐ Standard Play"
-    elif ev > 0:
-        rating = "❌ PASS (Low Edge)"
-    else:
-        rating = "❌ PASS (Negative EV)"
-        
-    return round(ev * 100, 2), rating
-
-# ==========================================
-# 6. MASTER EXECUTION LOOP
-# ==========================================
-def run_daily_slate():
-    print(f"\n[{datetime.datetime.now()}] 🚀 INITIALIZING QUANT SYNDICATE ENGINE...")
-    
-    live_games = get_live_vegas_odds("basketball_ncaab")
-    
-    if not live_games:
-        print("⚠️ No live games found or API hit a wall. Exiting.")
-        return
-
+def run_global_engine():
+    print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] 🚀 SYNDICATE ENGINE INITIALIZED")
+    global_intel = fetch_global_intelligence()
     results = []
     
-    print("\n🤖 Running 100,000 Monte Carlo Sims per game...")
-    for g in live_games:
-        # Note: Since we haven't built the ML scraper for true Power Ratings yet, 
-        # we give both teams a flat 75 rating just to test the API plumbing.
-        sims = simulate_game(away_rating=75.0, home_rating=75.0)
+    for api_key, config in SPORT_CONFIGS.items():
+        url = f"https://api.the-odds-api.com/v4/sports/{api_key}/odds/"
+        params = {'apiKey': API_KEY, 'regions': 'us', 'markets': 'h2h', 'oddsFormat': 'american'}
         
-        # Evaluate Home Team
-        home_ev, home_rating = evaluate_play("NCAAB", "ML", sims["Home ML Prob"], g["Home ML Best"])
-        results.append({
-            "Timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
-            "Sport": "NCAAB",
-            "Game": g["Game"],
-            "Bet": f"{g['Home Team']} ML",
-            "Odds": g["Home ML Best"],
-            "EV": f"{home_ev}%",
-            "Result": "Pending",
-            "QES Rating": home_rating
-        })
-        
-    df = pd.DataFrame(results)
-    
-    df.to_csv("ev_log.csv", index=False)
-        
-    print("\n💾 Saved to Local Vault. Pushing to GitHub...")
+        try:
+            res = requests.get(url, params=params)
+            if res.status_code == 200:
+                games = res.json()
+                print(f"📡 Sweeping {len(games)} {config['name']} games...")
+                for g in games:
+                    h_t, a_t = g.get('home_team'), g.get('away_team')
+                    best_ml = -10000
+                    for b in g.get('bookmakers', []):
+                        for m in b.get('markets', []):
+                            if m['key'] == 'h2h':
+                                for o in m['outcomes']:
+                                    if o['name'] == h_t and o['price'] > best_ml: best_ml = o['price']
+                    
+                    if best_ml == -10000: continue
+                    prob = simulate_match(a_t, h_t, global_intel, config)
+                    ev = calculate_ev(prob, best_ml)
+                    
+                    target = EV_THRESHOLDS.get(config["name"], 0.03)
+                    if ev >= (target + 0.02): rating = "🥇⭐⭐⭐⭐ STRONG"
+                    elif ev >= target: rating = "🥈⭐⭐⭐ VALUE"
+                    else: rating = "❌ PASS"
 
-    try:
-        subprocess.run(["git", "add", "ev_log.csv"], check=True)
-        subprocess.run(["git", "commit", "-m", "Live Odds API Sync"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("☁️ SUCCESS: Live Vegas Slate beamed to Dashboard.")
-    except Exception as e:
-        print("⚠️ Cloud sync failed. Check GitHub token.")
+                    results.append({
+                        "Timestamp": datetime.datetime.now().strftime("%H:%M"),
+                        "Sport": config["name"], "Game": f"{a_t} @ {h_t}",
+                        "Bet": f"{h_t} ML", "Odds": best_ml,
+                        "EV": f"{round(ev*100, 2)}%", "QES Rating": rating
+                    })
+        except: continue
+
+    if results:
+        pd.DataFrame(results).to_csv("ev_log.csv", index=False)
+        try:
+            subprocess.run(["git", "add", "."], check=True)
+            subprocess.run(["git", "commit", "-m", "Fail-Safe Intel Sync"], check=True)
+            subprocess.run(["git", "push"], check=True)
+            print("\n☁️ SYNDICATE TERMINAL UPDATED (BACKUP ACTIVE).")
+        except: print("⚠️ Git push failed.")
 
 if __name__ == "__main__":
-    run_daily_slate()
+    run_global_engine()
