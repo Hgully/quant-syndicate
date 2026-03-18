@@ -1,11 +1,3 @@
-Sport,Game,Bet,Book,Odds,EV,Timestamp
-Soccer (Primeira Liga),Casa Pia @ CF Estrela,CF Estrela,BetRivers,133,23.72%,2026-03-18 07:44
-Soccer (EFL Championship),Norwich City @ Southampton,Southampton,BetRivers,-120,23.75%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,BetMGM,275,21.87%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,FanDuel,280,23.5%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Southampton,FanDuel,-120,23.75%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,DraftKings,280,23.5%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,Bovada,280,23.5%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Southampton,Bovada,-118,24.7%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,BetUS,280,23.5%,2026-03-18 07:45
-Soccer (EFL Championship),Norwich City @ Southampton,Southampton,BetUS,-118,24.7%,2026-03-18 07:45
+Timestamp,Sport,Game,Bet,Odds,EV,Result,QES
+2026-03-18 07:46,NCAAB,Texas @ NC State,Texas ML,-110,15.7%,Pending,13.32
+2026-03-18 07:46,NCAAB,UMBC @ Howard,Howard ML,-110,-1.2%,Pending,-1.03
