@@ -1,2 +1,791 @@
 Timestamp,Sport,Game,Bet,Odds,EV,Result,QES
-
+2026-03-18 07:46,NCAAB,Texas @ NC State,Texas ML,-110,15.7%,Pending,13.32
+2026-03-18 07:46,NCAAB,UMBC @ Howard,Howard ML,-110,-1.2%,Pending,-1.03
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 07:50
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 07:50
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 07:50
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 07:50
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 07:50
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 07:50
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 07:50
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 07:50
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 07:50
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 07:50
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 07:50
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 07:50
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 07:50
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 07:50
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:01
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:01
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:01
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:01
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:01
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:01
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:01
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:01
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:01
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:01
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:01
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:01
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:01
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:01
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:12
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:12
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:12
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:12
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:12
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:12
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:12
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:12
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:12
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:12
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:12
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:12
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:12
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:12
+NBA,Oklahoma City Thunder @ Brooklyn Nets,Brooklyn Nets,FanDuel,1300,3.55%,2026-03-18 08:22
+NBA,Utah Jazz @ Minnesota Timberwolves,Utah Jazz,FanDuel,610,3.78%,2026-03-18 08:22
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:22
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:22
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:22
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:22
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:22
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:22
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:22
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:22
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:22
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:22
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:22
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:22
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:22
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:22
+NBA,Utah Jazz @ Minnesota Timberwolves,Utah Jazz,FanDuel,610,3.78%,2026-03-18 08:33
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:33
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:33
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:33
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:33
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:33
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:33
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:33
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:33
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:33
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:33
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:33
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:33
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:33
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:33
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:44
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:44
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:44
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:44
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:44
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:44
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:44
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:44
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:44
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:44
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:44
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:44
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:44
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:44
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 08:55
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 08:55
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 08:55
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 08:55
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 08:55
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 08:55
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 08:55
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 08:55
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 08:55
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 08:55
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 08:55
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 08:55
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 08:55
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 08:55
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:05
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:05
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:05
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:05
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:05
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:05
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:05
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:05
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:05
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:05
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:05
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 09:05
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:05
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:05
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:16
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:16
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:16
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:16
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:16
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:16
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:16
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:16
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:16
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:16
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:16
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:16
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 09:16
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:16
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:16
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 09:27
+NCAAB,High Point Panthers @ Wisconsin Badgers,High Point Panthers,FanDuel,420,3.48%,2026-03-18 09:27
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:27
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:27
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:27
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:27
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:27
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:27
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:27
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:27
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:27
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:27
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:27
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:27
+NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Cal Baptist Lancers,FanDuel,860,8.07%,2026-03-18 09:27
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:27
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:27
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 09:37
+NCAAB,High Point Panthers @ Wisconsin Badgers,High Point Panthers,FanDuel,420,3.48%,2026-03-18 09:37
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:37
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:37
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:37
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:37
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:37
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:37
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:37
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:37
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:37
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:37
+NCAAB,Hofstra Pride @ Alabama Crimson Tide,Hofstra Pride,MyBookie.ag,636,3.11%,2026-03-18 09:37
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:37
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:37
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:37
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:37
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 09:45
+NCAAB,High Point Panthers @ Wisconsin Badgers,High Point Panthers,FanDuel,420,3.48%,2026-03-18 09:45
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:45
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:45
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:45
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:45
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:45
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:45
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:45
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:45
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:45
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:45
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:45
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:45
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:45
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:45
+Tennis (WTA Miami),Tatjana Maria @ Hailey Baptiste,Tatjana Maria,FanDuel,360,3.11%,2026-03-18 09:46
+Soccer (EPL),Manchester United @ Bournemouth,Manchester United,BetRivers,108,23.87%,2026-03-18 09:46
+Soccer (EPL),Liverpool @ Brighton and Hove Albion,Brighton and Hove Albion,MyBookie.ag,200,23.56%,2026-03-18 09:46
+Soccer (EPL),Liverpool @ Brighton and Hove Albion,Brighton and Hove Albion,FanDuel,200,23.56%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Burnley,MyBookie.ag,470,19.23%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Fulham,MyBookie.ag,-186,21.6%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Fulham,FanDuel,-195,19.64%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Fulham,BetRivers,-195,19.64%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Burnley,Bovada,475,20.28%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Burnley,DraftKings,475,20.28%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Fulham,DraftKings,-175,24.27%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Fulham,BetMGM,-185,21.83%,2026-03-18 09:46
+Soccer (EPL),Burnley @ Fulham,Burnley,BetUS,475,20.28%,2026-03-18 09:46
+Soccer (EPL),Chelsea @ Everton,Everton,MyBookie.ag,230,23.17%,2026-03-18 09:46
+Soccer (EPL),Chelsea @ Everton,Chelsea,BetRivers,-103,23.53%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,MyBookie.ag,400,18.69%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Newcastle United,MyBookie.ag,-161,23.63%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Newcastle United,FanDuel,-170,21.12%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,BetRivers,425,24.63%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Newcastle United,BetRivers,-167,21.93%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,Bovada,425,24.63%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Newcastle United,Bovada,-157,24.84%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,DraftKings,425,24.63%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,BetMGM,400,18.69%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Sunderland,BetUS,425,24.63%,2026-03-18 09:46
+Soccer (EPL),Sunderland @ Newcastle United,Newcastle United,BetUS,-157,24.84%,2026-03-18 09:46
+Soccer (EPL),West Ham United @ Aston Villa,West Ham United,MyBookie.ag,265,20.26%,2026-03-18 09:46
+Soccer (EPL),West Ham United @ Aston Villa,West Ham United,BetMGM,275,23.56%,2026-03-18 09:46
+Soccer (EPL),Wolverhampton Wanderers @ West Ham United,Wolverhampton Wanderers,MyBookie.ag,310,11.0%,2026-03-18 09:46
+Soccer (EPL),Wolverhampton Wanderers @ West Ham United,Wolverhampton Wanderers,FanDuel,310,11.0%,2026-03-18 09:46
+Soccer (EPL),Wolverhampton Wanderers @ West Ham United,Wolverhampton Wanderers,DraftKings,320,13.71%,2026-03-18 09:46
+Soccer (EPL),Wolverhampton Wanderers @ West Ham United,Wolverhampton Wanderers,BetRivers,340,19.12%,2026-03-18 09:46
+Soccer (EPL),Wolverhampton Wanderers @ West Ham United,Wolverhampton Wanderers,Bovada,340,19.12%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,FanDuel,-290,18.66%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,MyBookie.ag,-295,18.15%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,DraftKings,-310,16.7%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Bournemouth,BetRivers,800,5.88%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,BetRivers,-315,16.25%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Bournemouth,Bovada,825,8.82%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,Bovada,-320,15.81%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Bournemouth,BetOnline.ag,900,17.65%,2026-03-18 09:46
+Soccer (EPL),Bournemouth @ Arsenal,Arsenal,BetOnline.ag,-300,17.65%,2026-03-18 09:46
+Soccer (EPL),Brighton and Hove Albion @ Burnley,Brighton and Hove Albion,MyBookie.ag,-126,24.57%,2026-03-18 09:46
+Soccer (EPL),Brighton and Hove Albion @ Burnley,Burnley,MyBookie.ag,300,22.2%,2026-03-18 09:46
+Soccer (EPL),Brighton and Hove Albion @ Burnley,Burnley,DraftKings,300,22.2%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,FanDuel,480,18.41%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,FanDuel,-200,19.38%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,MyBookie.ag,420,6.16%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,MyBookie.ag,-198,19.78%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,DraftKings,450,12.28%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,DraftKings,-200,19.38%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,BetRivers,480,18.41%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,BetRivers,-210,17.48%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,Bovada,475,17.39%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,Bovada,-197,19.98%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Fulham,BetOnline.ag,495,21.47%,2026-03-18 09:46
+Soccer (EPL),Fulham @ Liverpool,Liverpool,BetOnline.ag,-190,21.47%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Manchester City,FanDuel,135,24.57%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Manchester City,MyBookie.ag,134,24.04%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Chelsea,MyBookie.ag,166,24.99%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Manchester City,DraftKings,135,24.57%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Chelsea,DraftKings,165,24.52%,2026-03-18 09:46
+Soccer (EPL),Manchester City @ Chelsea,Chelsea,BetRivers,165,24.52%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,MyBookie.ag,410,9.46%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,MyBookie.ag,-174,23.67%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,FanDuel,440,15.9%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,FanDuel,-170,24.73%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,DraftKings,400,7.32%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,DraftKings,-175,23.41%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,BetRivers,440,15.9%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,BetRivers,-175,23.41%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,Bovada,440,15.9%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,Bovada,-176,23.16%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Leeds United,BetOnline.ag,475,23.41%,2026-03-18 09:46
+Soccer (EPL),Leeds United @ Manchester United,Manchester United,BetOnline.ag,-175,23.41%,2026-03-18 09:46
+Soccer (MLS),Columbus Crew SC @ Toronto FC,Columbus Crew SC,DraftKings,155,24.81%,2026-03-18 09:47
+Soccer (MLS),Columbus Crew SC @ Toronto FC,Columbus Crew SC,BetRivers,155,24.81%,2026-03-18 09:47
+Soccer (MLS),Chicago Fire @ Philadelphia Union,Chicago Fire,MyBookie.ag,218,22.52%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,MyBookie.ag,360,13.69%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,MyBookie.ag,-161,22.05%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,FanDuel,380,18.63%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,FanDuel,-170,19.57%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,Bovada,375,17.4%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,Bovada,-162,21.76%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,DraftKings,350,11.22%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,DraftKings,-170,19.57%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,BetOnline.ag,395,22.34%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,BetOnline.ag,-160,22.34%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,BetRivers,390,21.1%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,BetRivers,-165,20.91%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Orlando City SC,BetUS,375,17.4%,2026-03-18 09:47
+Soccer (MLS),Orlando City SC @ Nashville SC,Nashville SC,BetUS,-162,21.76%,2026-03-18 09:47
+Soccer (MLS),D.C. United @ Atlanta United FC,D.C. United,FanDuel,260,22.7%,2026-03-18 09:47
+Soccer (MLS),D.C. United @ Atlanta United FC,D.C. United,DraftKings,255,21.0%,2026-03-18 09:47
+Soccer (MLS),New York Red Bulls @ Charlotte FC,New York Red Bulls,MyBookie.ag,255,22.77%,2026-03-18 09:47
+Soccer (MLS),New York Red Bulls @ Charlotte FC,New York Red Bulls,FanDuel,240,17.59%,2026-03-18 09:47
+Soccer (MLS),New York Red Bulls @ Charlotte FC,New York Red Bulls,DraftKings,260,24.5%,2026-03-18 09:47
+Soccer (MLS),Colorado Rapids @ Sporting Kansas City,Colorado Rapids,MyBookie.ag,180,23.32%,2026-03-18 09:47
+Soccer (MLS),Colorado Rapids @ Sporting Kansas City,Colorado Rapids,FanDuel,180,23.32%,2026-03-18 09:47
+Soccer (MLS),Houston Dynamo @ FC Dallas,FC Dallas,FanDuel,110,24.77%,2026-03-18 09:47
+Soccer (MLS),Houston Dynamo @ FC Dallas,Houston Dynamo,DraftKings,205,23.78%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,New England Revolution,FanDuel,260,21.75%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,St. Louis City SC,FanDuel,-120,21.33%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,New England Revolution,MyBookie.ag,265,23.44%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,St. Louis City SC,MyBookie.ag,-114,24.24%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,New England Revolution,DraftKings,250,18.36%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,St. Louis City SC,DraftKings,-115,23.73%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,New England Revolution,Bovada,265,23.44%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,St. Louis City SC,Bovada,-113,24.75%,2026-03-18 09:47
+Soccer (MLS),New England Revolution @ St. Louis City SC,St. Louis City SC,BetRivers,-115,23.73%,2026-03-18 09:47
+Soccer (MLS),Los Angeles FC @ Austin FC,Los Angeles FC,FanDuel,-115,20.61%,2026-03-18 09:47
+Soccer (MLS),Los Angeles FC @ Austin FC,Austin FC,MyBookie.ag,250,24.21%,2026-03-18 09:47
+Soccer (MLS),Los Angeles FC @ Austin FC,Austin FC,DraftKings,240,20.66%,2026-03-18 09:47
+Soccer (MLS),Los Angeles FC @ Austin FC,Los Angeles FC,BetRivers,-113,21.6%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,Vancouver Whitecaps FC,MyBookie.ag,-189,23.81%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,San Jose Earthquakes,FanDuel,450,4.67%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,Vancouver Whitecaps FC,FanDuel,-210,19.53%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,San Jose Earthquakes,DraftKings,475,9.42%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,Vancouver Whitecaps FC,DraftKings,-190,23.59%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,San Jose Earthquakes,Bovada,550,23.7%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,San Jose Earthquakes,BetRivers,475,9.42%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,Vancouver Whitecaps FC,BetRivers,-190,23.59%,2026-03-18 09:47
+Soccer (MLS),San Jose Earthquakes @ Vancouver Whitecaps FC,San Jose Earthquakes,BetUS,550,23.7%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,MyBookie.ag,350,20.82%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,MyBookie.ag,-148,22.58%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,FanDuel,360,23.5%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,FanDuel,-165,17.49%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,DraftKings,330,15.45%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,DraftKings,-150,21.92%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,Bovada,350,20.82%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,Bovada,-143,24.31%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,BetOnline.ag,363,24.31%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,BetOnline.ag,-143,24.31%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,BetRivers,-155,20.35%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,CF Montreal,BetUS,350,20.82%,2026-03-18 09:47
+Soccer (MLS),CF Montreal @ FC Cincinnati,FC Cincinnati,BetUS,-143,24.31%,2026-03-18 09:47
+Soccer (MLS),Inter Miami CF @ New York City FC,New York City FC,DraftKings,115,23.09%,2026-03-18 09:47
+Soccer (MLS),LA Galaxy @ Portland Timbers,Portland Timbers,FanDuel,135,22.25%,2026-03-18 09:47
+Soccer (MLS),LA Galaxy @ Portland Timbers,LA Galaxy,DraftKings,160,24.74%,2026-03-18 09:47
+Soccer (MLS),LA Galaxy @ Portland Timbers,Portland Timbers,DraftKings,135,22.25%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,MyBookie.ag,330,12.36%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,DraftKings,330,12.36%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,San Diego FC,DraftKings,-155,21.53%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,Bovada,360,20.2%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,San Diego FC,Bovada,-149,23.45%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,BetOnline.ag,375,24.12%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,San Diego FC,BetOnline.ag,-147,24.12%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,BetRivers,360,20.2%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,San Diego FC,BetRivers,-155,21.53%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,Real Salt Lake,BetUS,360,20.2%,2026-03-18 09:47
+Soccer (MLS),Real Salt Lake @ San Diego FC,San Diego FC,BetUS,-149,23.45%,2026-03-18 09:47
+Soccer (La Liga),Real Sociedad @ Villarreal,Real Sociedad,DraftKings,275,24.64%,2026-03-18 09:47
+Soccer (La Liga),Girona @ CA Osasuna,Girona,BetMGM,220,23.91%,2026-03-18 09:47
+Soccer (La Liga),Oviedo @ Levante,Levante,BetRivers,110,23.97%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,FanDuel,-550,6.72%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,BetMGM,-375,14.38%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Rayo Vallecano,BetOnline.ag,1050,11.55%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,BetOnline.ag,-425,11.55%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,Bovada,-435,11.06%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Rayo Vallecano,BetRivers,1000,6.7%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,BetRivers,-480,9.11%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,BetUS,-435,11.06%,2026-03-18 09:47
+Soccer (La Liga),Rayo Vallecano @ Barcelona,Barcelona,DraftKings,-425,11.55%,2026-03-18 09:47
+Soccer (La Liga),Atlético Madrid @ Real Madrid,Atlético Madrid,BetRivers,255,21.76%,2026-03-18 09:47
+Soccer (La Liga),Atlético Madrid @ Real Madrid,Real Madrid,BetRivers,-113,23.85%,2026-03-18 09:47
+Soccer (La Liga),Atlético Madrid @ Real Madrid,Atlético Madrid,Bovada,255,21.76%,2026-03-18 09:47
+Soccer (La Liga),Atlético Madrid @ Real Madrid,Atlético Madrid,DraftKings,250,20.04%,2026-03-18 09:47
+Soccer (Serie A),Napoli @ Cagliari,Cagliari,FanDuel,490,23.63%,2026-03-18 09:47
+Soccer (Serie A),Napoli @ Cagliari,Napoli,BetRivers,-186,21.54%,2026-03-18 09:47
+Soccer (Serie A),Napoli @ Cagliari,Cagliari,DraftKings,475,20.49%,2026-03-18 09:47
+Soccer (Serie A),Napoli @ Cagliari,Cagliari,BetMGM,475,20.49%,2026-03-18 09:47
+Soccer (Serie A),Cremonese @ Parma,Cremonese,BetMGM,270,22.0%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,FanDuel,700,9.6%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,FanDuel,-310,14.14%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,BetMGM,700,9.6%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,BetMGM,-250,20.82%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,BetOnline.ag,765,18.5%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,BetOnline.ag,-268,18.5%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,BetRivers,800,23.3%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,BetRivers,-305,14.6%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,Bovada,700,9.6%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,Bovada,-275,17.68%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,DraftKings,650,2.75%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,DraftKings,-295,15.55%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,Torino,BetUS,700,9.6%,2026-03-18 09:47
+Soccer (Serie A),Torino @ AC Milan,AC Milan,BetUS,-275,17.68%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,FanDuel,750,9.84%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,FanDuel,-320,14.29%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,BetMGM,750,9.84%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,BetMGM,-285,17.63%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,BetOnline.ag,807,17.21%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,BetOnline.ag,-289,17.21%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,BetRivers,-335,13.07%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,Bovada,775,13.07%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,Bovada,-300,16.1%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,DraftKings,700,3.38%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,DraftKings,-320,14.29%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Sassuolo,BetUS,775,13.07%,2026-03-18 09:47
+Soccer (Serie A),Sassuolo @ Juventus,Juventus,BetUS,-300,16.1%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Pisa,FanDuel,950,11.55%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,FanDuel,-425,10.41%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Pisa,BetMGM,1000,16.86%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,BetMGM,-350,14.91%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Pisa,BetOnline.ag,975,14.2%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,BetOnline.ag,-360,14.2%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,BetRivers,-420,10.66%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Pisa,Bovada,900,6.24%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,Bovada,-370,13.53%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,DraftKings,-390,12.29%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Pisa,BetUS,900,6.24%,2026-03-18 09:47
+Soccer (Serie A),Pisa @ Como,Como,BetUS,-370,13.53%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,FanDuel,700,11.23%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,FanDuel,-310,13.87%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,BetMGM,675,7.75%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,BetMGM,-250,20.54%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,BetOnline.ag,765,20.26%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,BetOnline.ag,-252,20.26%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,BetRivers,-295,15.28%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,Bovada,725,14.7%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,Bovada,-260,19.21%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,DraftKings,650,4.27%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,DraftKings,-270,17.98%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Hellas Verona,BetUS,725,14.7%,2026-03-18 09:47
+Soccer (Serie A),Hellas Verona @ Atalanta BC,Atalanta BC,BetUS,-260,19.21%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,FanDuel,700,16.24%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,FanDuel,-280,16.0%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,BetMGM,725,19.87%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,BetMGM,-250,19.66%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,BetOnline.ag,744,22.63%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,BetOnline.ag,-230,22.63%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,BetRivers,-295,14.44%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,Bovada,700,16.24%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,Bovada,-240,21.08%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,DraftKings,650,8.97%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,DraftKings,-255,18.99%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,Lecce,BetUS,700,16.24%,2026-03-18 09:47
+Soccer (Serie A),Lecce @ AS Roma,AS Roma,BetUS,-240,21.08%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,FanDuel,-175,18.16%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,BetMGM,-160,22.19%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Fiorentina,BetMGM,400,24.03%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,BetOnline.ag,-158,22.79%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Fiorentina,BetOnline.ag,395,22.79%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,BetRivers,-162,21.61%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,Bovada,-163,21.33%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Fiorentina,Bovada,385,20.31%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,DraftKings,-170,19.43%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Fiorentina,DraftKings,360,14.1%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Inter Milan,BetUS,-163,21.33%,2026-03-18 09:47
+Soccer (Serie A),Inter Milan @ Fiorentina,Fiorentina,BetUS,385,20.31%,2026-03-18 09:47
+Soccer (Serie A),Atalanta BC @ Lecce,Lecce,DraftKings,340,11.02%,2026-03-18 09:47
+Soccer (Serie A),Atalanta BC @ Lecce,Atalanta BC,BetRivers,-157,22.39%,2026-03-18 09:47
+Soccer (Serie A),Atalanta BC @ Lecce,Lecce,Bovada,360,16.07%,2026-03-18 09:47
+Soccer (Serie A),Cagliari @ Sassuolo,Cagliari,DraftKings,320,18.31%,2026-03-18 09:47
+Soccer (Serie A),Cagliari @ Sassuolo,Cagliari,BetRivers,325,19.72%,2026-03-18 09:47
+Soccer (Serie A),Fiorentina @ Hellas Verona,Hellas Verona,DraftKings,285,16.67%,2026-03-18 09:47
+Soccer (Serie A),Fiorentina @ Hellas Verona,Hellas Verona,Bovada,305,22.73%,2026-03-18 09:47
+Soccer (Serie A),Parma @ Lazio,Parma,DraftKings,350,14.24%,2026-03-18 09:47
+Soccer (Serie A),Parma @ Lazio,Parma,Bovada,385,23.12%,2026-03-18 09:47
+Soccer (Serie A),Bologna @ Cremonese,Cremonese,DraftKings,275,20.59%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,AS Roma,DraftKings,390,16.39%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,Inter Milan,DraftKings,-165,22.46%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,AS Roma,BetRivers,420,23.52%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,Inter Milan,BetRivers,-162,23.31%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,AS Roma,Bovada,420,23.52%,2026-03-18 09:47
+Soccer (Serie A),AS Roma @ Inter Milan,Inter Milan,Bovada,-157,24.81%,2026-03-18 09:47
+Soccer (Serie A),Como @ Udinese,Udinese,DraftKings,310,17.57%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Juventus,DraftKings,-290,16.97%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Juventus,BetRivers,-305,15.5%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Genoa,BetOnline.ag,825,20.43%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Juventus,BetOnline.ag,-260,20.43%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Genoa,Bovada,775,13.92%,2026-03-18 09:47
+Soccer (Serie A),Genoa @ Juventus,Juventus,Bovada,-270,19.19%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,FanDuel,240,17.44%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,RB Leipzig,FanDuel,-120,20.01%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,BetRivers,250,20.89%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,RB Leipzig,BetRivers,-115,22.38%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,BetMGM,240,17.44%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,Bovada,250,20.89%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,RB Leipzig,Bovada,-111,24.43%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,BetUS,250,20.89%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,RB Leipzig,BetUS,-111,24.43%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,TSG Hoffenheim,DraftKings,235,15.71%,2026-03-18 09:47
+Soccer (Bundesliga),TSG Hoffenheim @ RB Leipzig,RB Leipzig,DraftKings,-110,24.97%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,FanDuel,-200,15.66%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,FanDuel,430,21.32%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,BetMGM,-175,21.17%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,BetMGM,425,20.18%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,BetRivers,-186,18.57%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,BetRivers,430,21.32%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,Bovada,-174,21.42%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,Bovada,420,19.03%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,BetOnline.ag,-170,22.47%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,BetOnline.ag,435,22.47%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,BetUS,-174,21.42%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,BetUS,420,19.03%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,Bayer Leverkusen,DraftKings,-185,18.79%,2026-03-18 09:47
+Soccer (Bundesliga),Bayer Leverkusen @ 1. FC Heidenheim,1. FC Heidenheim,DraftKings,390,12.17%,2026-03-18 09:47
+Soccer (Bundesliga),Borussia Monchengladbach @ 1. FC Köln,Borussia Monchengladbach,FanDuel,185,22.44%,2026-03-18 09:47
+Soccer (Bundesliga),Borussia Monchengladbach @ 1. FC Köln,Borussia Monchengladbach,DraftKings,190,24.59%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,BetMGM,-600,7.39%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,BetRivers,-770,4.0%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,Bovada,-625,6.77%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Union Berlin,BetOnline.ag,1250,7.39%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,BetOnline.ag,-600,7.39%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,BetUS,-625,6.77%,2026-03-18 09:47
+Soccer (Bundesliga),Union Berlin @ Bayern Munich,Bayern Munich,DraftKings,-700,5.19%,2026-03-18 09:47
+Soccer (Bundesliga),Werder Bremen @ VfL Wolfsburg,Werder Bremen,FanDuel,165,23.43%,2026-03-18 09:47
+Soccer (Bundesliga),Werder Bremen @ VfL Wolfsburg,Werder Bremen,BetMGM,165,23.43%,2026-03-18 09:47
+Soccer (Bundesliga),Werder Bremen @ VfL Wolfsburg,Werder Bremen,BetRivers,160,21.1%,2026-03-18 09:47
+Soccer (Bundesliga),Werder Bremen @ VfL Wolfsburg,Werder Bremen,DraftKings,165,23.43%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,FanDuel,650,18.92%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,FanDuel,-310,11.29%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,BetMGM,600,10.99%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,BetMGM,-250,17.8%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,BetRivers,-295,12.67%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,Bovada,600,10.99%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,Bovada,-250,17.8%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,BetOnline.ag,650,18.92%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,BetOnline.ag,-242,18.92%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,BetUS,600,10.99%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,BetUS,-250,17.8%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Hamburger SV,DraftKings,550,3.06%,2026-03-18 09:47
+Soccer (Bundesliga),Hamburger SV @ Borussia Dortmund,Borussia Dortmund,DraftKings,-265,15.9%,2026-03-18 09:47
+Soccer (Bundesliga),Eintracht Frankfurt @ FSV Mainz 05,Eintracht Frankfurt,BetMGM,225,23.42%,2026-03-18 09:47
+Soccer (Bundesliga),Eintracht Frankfurt @ FSV Mainz 05,Eintracht Frankfurt,BetRivers,210,17.72%,2026-03-18 09:47
+Soccer (Bundesliga),Eintracht Frankfurt @ FSV Mainz 05,Eintracht Frankfurt,DraftKings,220,21.52%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,VfB Stuttgart,FanDuel,-105,22.69%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,VfB Stuttgart,BetMGM,-105,22.69%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,VfB Stuttgart,BetRivers,-114,17.97%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,Augsburg,Bovada,235,24.48%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,Augsburg,BetUS,235,24.48%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,VfB Stuttgart,DraftKings,-105,22.69%,2026-03-18 09:47
+Soccer (Bundesliga),VfB Stuttgart @ Augsburg,Augsburg,DraftKings,225,20.77%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,FanDuel,-360,12.58%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,Bovada,800,7.02%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,Bovada,-330,14.81%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,BetRivers,900,18.91%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,BetRivers,-345,13.65%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,DraftKings,850,12.96%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,DraftKings,-310,16.53%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,BetUS,800,7.02%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,BetUS,-330,14.81%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,BetMGM,825,9.99%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,BetMGM,-300,17.48%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,Angers,BetOnline.ag,880,16.53%,2026-03-18 09:47
+Soccer (Ligue 1),Angers @ RC Lens,RC Lens,BetOnline.ag,-310,16.53%,2026-03-18 09:47
+Soccer (Ligue 1),Lorient @ Toulouse,Lorient,BetMGM,310,24.6%,2026-03-18 09:47
+Soccer (Ligue 1),Lorient @ Toulouse,Lorient,FanDuel,290,18.52%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,BetMGM,-250,18.85%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,BetMGM,600,5.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,FanDuel,-320,11.42%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,FanDuel,650,13.31%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,Bovada,-285,14.68%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,Bovada,600,5.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,BetRivers,-275,15.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,DraftKings,-275,15.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,DraftKings,600,5.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,BetUS,-285,14.68%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,BetUS,600,5.76%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Paris Saint Germain,BetOnline.ag,-270,16.33%,2026-03-18 09:47
+Soccer (Ligue 1),Paris Saint Germain @ Nice,Nice,BetOnline.ag,670,16.33%,2026-03-18 09:47
+Soccer (Ligue 1),Lille @ Marseille,Lille,BetMGM,270,24.67%,2026-03-18 09:47
+Soccer (Ligue 1),Lille @ Marseille,Lille,FanDuel,270,24.67%,2026-03-18 09:47
+Soccer (Ligue 1),Lille @ Marseille,Marseille,FanDuel,-120,21.56%,2026-03-18 09:47
+Soccer (Ligue 1),Lille @ Marseille,Lille,BetRivers,260,21.3%,2026-03-18 09:47
+Soccer (Ligue 1),Lille @ Marseille,Lille,DraftKings,270,24.67%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,BetMGM,675,6.78%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,BetMGM,-275,17.58%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,FanDuel,700,10.23%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,FanDuel,-320,13.17%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,Bovada,700,10.23%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,Bovada,-290,15.95%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,BetRivers,700,10.23%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,BetRivers,-305,14.49%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,DraftKings,650,3.34%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,DraftKings,-275,17.58%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,BetUS,675,6.78%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,BetUS,-290,15.95%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Metz,BetOnline.ag,755,17.8%,2026-03-18 09:47
+Soccer (Ligue 1),Metz @ Rennes,Rennes,BetOnline.ag,-273,17.8%,2026-03-18 09:47
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,BetMGM,380,7.51%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,BetMGM,-175,21.94%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,FanDuel,420,16.47%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,FanDuel,-185,19.55%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,DraftKings,425,17.59%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,DraftKings,-180,20.71%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,BetRivers,430,18.71%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,BetRivers,-195,17.4%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,BetOnline.ag,440,20.95%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,BetOnline.ag,-179,20.95%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,BetUS,420,16.47%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,BetUS,-182,20.24%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Newcastle United,Bovada,420,16.47%,2026-03-18 09:48
+Soccer (Champions League),Newcastle United @ Barcelona,Barcelona,Bovada,-182,20.24%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,BetMGM,550,3.82%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,BetMGM,-250,17.64%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,FanDuel,600,11.81%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,FanDuel,-270,15.15%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,DraftKings,600,11.81%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,DraftKings,-260,16.35%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,BetRivers,650,19.79%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,BetRivers,-305,11.58%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,BetOnline.ag,630,16.6%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,BetOnline.ag,-258,16.6%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,BetUS,575,7.81%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,BetUS,-265,15.74%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Atalanta BC,Bovada,575,7.81%,2026-03-18 09:48
+Soccer (Champions League),Atalanta BC @ Bayern Munich,Bayern Munich,Bovada,-265,15.74%,2026-03-18 09:48
+Soccer (Champions League),Atlético Madrid @ Tottenham Hotspur,Tottenham Hotspur,BetMGM,130,24.93%,2026-03-18 09:48
+Soccer (Champions League),Atlético Madrid @ Tottenham Hotspur,Atlético Madrid,BetRivers,170,23.34%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,BetMGM,-375,12.0%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Galatasaray,FanDuel,850,10.02%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,FanDuel,-400,10.52%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Galatasaray,BetRivers,900,15.81%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,BetRivers,-420,9.47%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Galatasaray,BetOnline.ag,875,12.91%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,BetOnline.ag,-361,12.91%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Galatasaray,BetUS,900,15.81%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,BetUS,-385,11.39%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Galatasaray,Bovada,825,7.12%,2026-03-18 09:48
+Soccer (Champions League),Galatasaray @ Liverpool,Liverpool,Bovada,-365,12.64%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,BetMGM,525,11.53%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,BetMGM,-210,21.28%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,FanDuel,550,15.99%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,FanDuel,-240,16.39%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,BetRivers,575,20.45%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,BetRivers,-230,17.88%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,BetUS,550,15.99%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,BetUS,-227,18.35%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,Bovada,550,15.99%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,Bovada,-227,18.35%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,DraftKings,600,24.91%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,DraftKings,-220,19.5%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,Ferencváros TC,BetOnline.ag,585,22.23%,2026-03-18 09:48
+Soccer (Europa League),Ferencváros TC @ SC Braga,SC Braga,BetOnline.ag,-205,22.23%,2026-03-18 09:48
+Soccer (Europa League),Nottingham Forest @ FC Midtjylland,FC Midtjylland,FanDuel,220,24.81%,2026-03-18 09:48
+Soccer (Europa League),Nottingham Forest @ FC Midtjylland,FC Midtjylland,Bovada,220,24.81%,2026-03-18 09:48
+Soccer (Europa League),Nottingham Forest @ FC Midtjylland,FC Midtjylland,DraftKings,220,24.81%,2026-03-18 09:48
+Soccer (Europa League),Nottingham Forest @ FC Midtjylland,Nottingham Forest,BetUS,102,23.22%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,KRC Genk,BetMGM,425,17.5%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,BetMGM,-165,24.66%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,FanDuel,-185,19.58%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,BetRivers,-200,16.43%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,KRC Genk,Bovada,445,21.97%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,Bovada,-178,21.23%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,KRC Genk,DraftKings,450,23.09%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,DraftKings,-170,23.28%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,KRC Genk,BetOnline.ag,445,21.97%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,BetOnline.ag,-175,21.97%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,KRC Genk,BetUS,445,21.97%,2026-03-18 09:48
+Soccer (Europa League),KRC Genk @ SC Freiburg,SC Freiburg,BetUS,-178,21.23%,2026-03-18 09:48
+Soccer (Europa League),Bologna @ AS Roma,AS Roma,BetRivers,-137,24.82%,2026-03-18 09:48
+Soccer (Europa League),Bologna @ AS Roma,Bologna,Bovada,345,23.92%,2026-03-18 09:48
+Soccer (Europa League),Bologna @ AS Roma,Bologna,BetUS,345,23.92%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,FanDuel,-170,18.63%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,BetMGM,-150,24.48%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,BetRivers,-159,21.67%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Lille,Bovada,390,24.01%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,Bovada,-157,22.26%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,DraftKings,-150,24.48%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Lille,BetOnline.ag,388,23.51%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,BetOnline.ag,-153,23.51%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Lille,BetUS,390,24.01%,2026-03-18 09:48
+Soccer (Europa League),Lille @ Aston Villa,Aston Villa,BetUS,-157,22.26%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,FanDuel,650,13.59%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,FanDuel,-290,14.12%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,BetMGM,600,6.02%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,BetMGM,-235,20.96%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,BetRivers,700,21.16%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,BetRivers,-250,18.8%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,Bovada,650,13.59%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,Bovada,-255,18.13%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,DraftKings,650,13.59%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,DraftKings,-240,20.21%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,BetOnline.ag,680,18.13%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,BetOnline.ag,-255,18.13%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Panathinaikos FC,BetUS,650,13.59%,2026-03-18 09:48
+Soccer (Europa League),Panathinaikos FC @ Real Betis,Real Betis,BetUS,-255,18.13%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,BetRivers,600,3.76%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,BetRivers,-278,15.82%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,BetMGM,-250,19.25%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,FanDuel,700,18.58%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,FanDuel,-310,12.65%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,Bovada,600,3.76%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,Bovada,-275,16.15%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,BetUS,680,15.62%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,BetUS,-270,16.72%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,DraftKings,650,11.17%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,DraftKings,-260,17.94%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,León,BetOnline.ag,700,18.58%,2026-03-18 09:48
+Soccer (Liga MX),León @ Guadalajara,Guadalajara,BetOnline.ag,-255,18.58%,2026-03-18 09:48
+Soccer (Liga MX),Tijuana @ Necaxa,Tijuana,BetRivers,175,14.84%,2026-03-18 09:48
+Soccer (Liga MX),Tijuana @ Necaxa,Necaxa,Bovada,110,22.3%,2026-03-18 09:48
+Soccer (Liga MX),Tijuana @ Necaxa,Tijuana,BetMGM,195,23.19%,2026-03-18 09:48
+Soccer (Liga MX),Tijuana @ Necaxa,Necaxa,BetUS,110,22.3%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,BetRivers,-215,16.37%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,BetRivers,500,23.45%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,FanDuel,-210,17.25%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,FanDuel,500,23.45%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,BetMGM,-190,21.23%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,BetMGM,450,13.16%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,DraftKings,-195,20.16%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,DraftKings,450,13.16%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,Bovada,-208,17.61%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,Bovada,460,15.22%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,BetOnline.ag,-194,20.37%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,BetOnline.ag,485,20.37%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Cruz Azul,BetUS,-208,17.61%,2026-03-18 09:48
+Soccer (Liga MX),Cruz Azul @ Mazatlán FC,Mazatlán FC,BetUS,460,15.22%,2026-03-18 09:48
+Soccer (Liga MX),Querétaro @ Atlas,Querétaro,BetRivers,265,21.35%,2026-03-18 09:48
+Soccer (Liga MX),Querétaro @ Atlas,Atlas,FanDuel,-120,22.38%,2026-03-18 09:48
+Soccer (Liga MX),América @ Pumas,Pumas,BetRivers,205,24.34%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Pachuca,BetRivers,260,19.62%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Toluca,FanDuel,-120,22.41%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Pachuca,Bovada,270,22.95%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Pachuca,DraftKings,265,21.29%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Pachuca,BetUS,270,22.95%,2026-03-18 09:48
+Soccer (Liga MX),Toluca @ Pachuca,Pachuca,BetMGM,260,19.62%,2026-03-18 09:48
+Soccer (Liga MX),Puebla @ Santos Laguna,Puebla,BetRivers,138,13.63%,2026-03-18 09:48
+Soccer (Liga MX),Tigres @ FC Juárez,FC Juárez,BetRivers,230,24.56%,2026-03-18 09:48
+Soccer (Liga MX),Tigres @ FC Juárez,FC Juárez,BetMGM,230,24.56%,2026-03-18 09:48
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 09:48
+NCAAB,High Point Panthers @ Wisconsin Badgers,High Point Panthers,FanDuel,420,3.48%,2026-03-18 09:48
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:48
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:48
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:48
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:48
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:48
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:48
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:48
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:48
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:48
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:48
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:48
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:48
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:48
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:48
+Soccer (Primeira Liga),Casa Pia @ CF Estrela,CF Estrela,BetRivers,133,23.72%,2026-03-18 09:48
+Soccer (EFL Championship),Norwich City @ Southampton,Southampton,BetRivers,-120,23.75%,2026-03-18 09:49
+Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,BetMGM,275,21.87%,2026-03-18 09:49
+Soccer (EFL Championship),Norwich City @ Southampton,Southampton,FanDuel,-120,23.75%,2026-03-18 09:49
+Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,Bovada,280,23.5%,2026-03-18 09:49
+Soccer (EFL Championship),Norwich City @ Southampton,Southampton,Bovada,-119,24.22%,2026-03-18 09:49
+Soccer (EFL Championship),Norwich City @ Southampton,Norwich City,BetUS,275,21.87%,2026-03-18 09:49
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 09:59
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 09:59
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 09:59
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 09:59
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,1600,5.45%,2026-03-18 09:59
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 09:59
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 09:59
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 09:59
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 09:59
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 09:59
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 09:59
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,2.11%,2026-03-18 09:59
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 09:59
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 09:59
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 09:59
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 10:09
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 10:09
+NCAAB,Hawai'i Rainbow Warriors @ Arkansas Razorbacks,Hawai'i Rainbow Warriors,FanDuel,980,2.8%,2026-03-18 10:09
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 10:09
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 10:09
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,2000,22.26%,2026-03-18 10:09
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 10:09
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 10:09
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 10:09
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 10:09
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 10:09
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 10:09
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,15.42%,2026-03-18 10:09
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,MyBookie.ag,461,11.64%,2026-03-18 10:09
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 10:09
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 10:09
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 10:09
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 10:20
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 10:20
+NCAAB,Hawai'i Rainbow Warriors @ Arkansas Razorbacks,Hawai'i Rainbow Warriors,FanDuel,980,2.8%,2026-03-18 10:20
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 10:20
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 10:20
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,2000,22.26%,2026-03-18 10:20
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 10:20
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 10:20
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 10:20
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 10:20
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 10:20
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 10:20
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,11.54%,2026-03-18 10:20
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 10:20
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 10:20
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 10:20
+NCAAB,Troy Trojans @ Nebraska Cornhuskers,Troy Trojans,FanDuel,740,6.08%,2026-03-18 10:31
+NCAAB,North Dakota St Bison @ Michigan St Spartans,North Dakota St Bison,FanDuel,1200,15.84%,2026-03-18 10:31
+NCAAB,Hawai'i Rainbow Warriors @ Arkansas Razorbacks,Hawai'i Rainbow Warriors,FanDuel,980,2.8%,2026-03-18 10:31
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetRivers,2200,5.54%,2026-03-18 10:31
+NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Pennsylvania Quakers,BetMGM,2500,19.31%,2026-03-18 10:31
+NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Kennesaw St Owls,FanDuel,2000,22.26%,2026-03-18 10:31
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,DraftKings,2200,5.54%,2026-03-18 10:31
+NCAAB,Idaho Vandals @ Houston Cougars,Idaho Vandals,BetMGM,2500,19.31%,2026-03-18 10:31
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,FanDuel,1400,10.28%,2026-03-18 10:31
+NCAAB,Wright St Raiders @ Virginia Cavaliers,Wright St Raiders,DraftKings,1300,2.93%,2026-03-18 10:31
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,DraftKings,2200,5.54%,2026-03-18 10:31
+NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Tennessee St Tigers,BetMGM,2500,19.31%,2026-03-18 10:31
+NCAAB,Northern Iowa Panthers @ St. John's Red Storm,Northern Iowa Panthers,FanDuel,480,8.26%,2026-03-18 10:31
+NCAAB,Queens University Royals @ Purdue Boilermakers,Queens University Royals,BetMGM,2800,19.12%,2026-03-18 10:31
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,FanDuel,2000,22.26%,2026-03-18 10:31
+NCAAB,Furman Paladins @ UConn Huskies,Furman Paladins,DraftKings,1700,4.79%,2026-03-18 10:31
