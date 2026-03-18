@@ -1,157 +1,166 @@
-Timestamp,Sport,Game,Bet,Odds,EV,Result,QES Rating
-2026-03-18 18:18,NCAAB,Prairie View Panthers @ Lehigh Mountain Hawks,Lehigh Mountain Hawks ML,-155,-17.84%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Navy Midshipmen @ Wake Forest Demon Deacons,Wake Forest Demon Deacons ML,-500,-40.22%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,GW Revolutionaries @ Utah Valley Wolverines,Utah Valley Wolverines ML,-120,-8.27%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Kent State Golden Flashes @ Illinois St Redbirds,Illinois St Redbirds ML,-210,-26.37%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Dayton Flyers @ Bradley Braves,Bradley Braves ML,126,13.1%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NCAAB,Sam Houston St Bearkats @ New Mexico Lobos,New Mexico Lobos ML,-750,-43.26%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Miami (OH) RedHawks @ SMU Mustangs,SMU Mustangs ML,-300,-33.59%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Murray St Racers @ Nevada Wolf Pack,Nevada Wolf Pack ML,-350,-35.76%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,UIC Flames @ California Golden Bears,California Golden Bears ML,-250,-29.86%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Saint Joseph's Hawks @ Colorado St Rams,Colorado St Rams ML,-250,-30.25%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,TCU Horned Frogs @ Ohio State Buckeyes,Ohio State Buckeyes ML,-135,-13.23%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Troy Trojans @ Nebraska Cornhuskers,Nebraska Cornhuskers ML,-950,-44.28%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,South Florida Bulls @ Louisville Cardinals,Louisville Cardinals ML,-180,-22.23%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,High Point Panthers @ Wisconsin Badgers,Wisconsin Badgers ML,-450,-38.95%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,McNeese Cowboys @ Vanderbilt Commodores,Vanderbilt Commodores ML,-670,-42.55%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,North Dakota St Bison @ Michigan St Spartans,Michigan St Spartans ML,-1430,-46.36%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Hawai'i Rainbow Warriors @ Arkansas Razorbacks,Arkansas Razorbacks ML,-1400,-46.54%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,VCU Rams @ North Carolina Tar Heels,North Carolina Tar Heels ML,-145,-15.59%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Texas Longhorns @ BYU Cougars,BYU Cougars ML,-135,-12.84%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Texas A&M Aggies @ Saint Mary's Gaels,Saint Mary's Gaels ML,-159,-18.24%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Illinois Fighting Illini ML,-8000,-49.25%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Saint Louis Billikens @ Georgia Bulldogs,Georgia Bulldogs ML,-136,-13.01%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Gonzaga Bulldogs ML,-4000,-48.63%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Idaho Vandals @ Houston Cougars,Houston Cougars ML,-7500,-49.26%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Santa Clara Broncos @ Kentucky Wildcats,Kentucky Wildcats ML,-150,-16.62%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Akron Zips @ Texas Tech Red Raiders,Texas Tech Red Raiders ML,-305,-33.56%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Wright St Raiders @ Virginia Cavaliers,Virginia Cavaliers ML,-2200,-47.75%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Iowa State Cyclones ML,-7000,-49.6%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Hofstra Pride @ Alabama Crimson Tide,Alabama Crimson Tide ML,-715,-42.67%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Utah State Aggies @ Villanova Wildcats,Villanova Wildcats ML,105,2.92%,Pending,❌ PASS (Low Edge)
-2026-03-18 18:18,NCAAB,Iowa Hawkeyes @ Clemson Tigers,Clemson Tigers ML,122,11.35%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NCAAB,Northern Iowa Panthers @ St. John's Red Storm,St. John's Red Storm ML,-520,-40.46%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,UCF Knights @ UCLA Bruins,UCLA Bruins ML,-235,-28.63%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Queens University Royals @ Purdue Boilermakers,Purdue Boilermakers ML,-8000,-49.49%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Kansas Jayhawks ML,-1100,-45.31%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Furman Paladins @ UConn Huskies,UConn Huskies ML,-3500,-48.55%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAB,Missouri Tigers @ Miami Hurricanes,Miami Hurricanes ML,-130,-11.97%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NBA,Golden State Warriors @ Boston Celtics,Boston Celtics ML,-590,-41.38%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NBA,Oklahoma City Thunder @ Brooklyn Nets,Brooklyn Nets ML,1120,508.48%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NBA,Portland Trail Blazers @ Indiana Pacers,Indiana Pacers ML,560,231.72%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NBA,Toronto Raptors @ Chicago Bulls,Chicago Bulls ML,250,75.37%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NBA,Los Angeles Clippers @ New Orleans Pelicans,New Orleans Pelicans ML,-118,-7.7%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NBA,Utah Jazz @ Minnesota Timberwolves,Minnesota Timberwolves ML,-737,-43.12%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NBA,Atlanta Hawks @ Dallas Mavericks,Dallas Mavericks ML,275,87.36%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NBA,Denver Nuggets @ Memphis Grizzlies,Memphis Grizzlies ML,570,236.07%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NBA,Los Angeles Lakers @ Houston Rockets,Houston Rockets ML,-120,-8.31%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,NC State Wolfpack @ Virginia Cavaliers,Virginia Cavaliers ML,-176,-21.45%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,North Carolina Tar Heels @ TCU Horned Frogs,TCU Horned Frogs ML,-310,-33.52%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Baylor Bears @ Auburn Tigers,Auburn Tigers ML,-295,-32.82%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,UCLA Bruins @ California Golden Bears,California Golden Bears ML,-172,-21.43%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Clemson Tigers @ LSU Tigers,LSU Tigers ML,-465,-39.33%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Louisville Cardinals @ Ole Miss Rebels,Ole Miss Rebels ML,-350,-35.44%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Wisconsin Badgers @ Notre Dame Fighting Irish,Notre Dame Fighting Irish ML,-1050,-45.29%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Oklahoma Sooners @ Michigan Wolverines,Michigan Wolverines ML,-118,-8.15%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NCAAF,Ohio State Buckeyes @ Texas Longhorns,Texas Longhorns ML,-130,-11.41%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,New York Yankees @ San Francisco Giants,San Francisco Giants ML,104,1.9%,Pending,🥈⭐⭐⭐ Standard Play
-2026-03-18 18:18,MLB,Pittsburgh Pirates @ New York Mets,New York Mets ML,-128,-11.14%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Chicago White Sox @ Milwaukee Brewers,Milwaukee Brewers ML,-197,-24.52%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Washington Nationals @ Chicago Cubs,Chicago Cubs ML,-198,-24.45%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Minnesota Twins @ Baltimore Orioles,Baltimore Orioles ML,-162,-18.88%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Boston Red Sox @ Cincinnati Reds,Cincinnati Reds ML,135,17.11%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,MLB,Detroit Tigers @ San Diego Padres,San Diego Padres ML,126,12.78%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,MLB,Los Angeles Angels @ Houston Astros,Houston Astros ML,-190,-23.76%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Texas Rangers @ Philadelphia Phillies,Philadelphia Phillies ML,-134,-12.48%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Tampa Bay Rays @ St. Louis Cardinals,St. Louis Cardinals ML,100,-0.34%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Arizona Diamondbacks @ Los Angeles Dodgers,Los Angeles Dodgers ML,-212,-26.32%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Cleveland Guardians @ Seattle Mariners,Seattle Mariners ML,-160,-18.84%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,MLB,Colorado Rockies @ Miami Marlins,Miami Marlins ML,-165,-19.76%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,New Jersey Devils @ New York Rangers,New York Rangers ML,105,2.46%,Pending,🥈⭐⭐⭐ Standard Play
-2026-03-18 18:18,NHL,Pittsburgh Penguins @ Carolina Hurricanes,Carolina Hurricanes ML,-135,-13.29%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Ottawa Senators @ Washington Capitals,Washington Capitals ML,116,7.56%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NHL,St Louis Blues @ Calgary Flames,Calgary Flames ML,110,4.58%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NHL,Dallas Stars @ Colorado Avalanche,Colorado Avalanche ML,-141,-14.78%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Philadelphia Flyers @ Anaheim Ducks,Anaheim Ducks ML,-148,-16.07%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Winnipeg Jets @ Boston Bruins,Boston Bruins ML,-135,-12.41%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,New York Rangers @ Columbus Blue Jackets,Columbus Blue Jackets ML,-218,-26.98%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Montréal Canadiens @ Detroit Red Wings,Detroit Red Wings ML,-105,-2.0%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,New York Islanders @ Ottawa Senators,Ottawa Senators ML,-140,-14.57%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Chicago Blackhawks @ Minnesota Wild,Minnesota Wild ML,-240,-29.39%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Seattle Kraken @ Nashville Predators,Nashville Predators ML,-129,-11.22%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Florida Panthers @ Edmonton Oilers,Edmonton Oilers ML,-145,-15.77%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Buffalo Sabres @ San Jose Sharks,San Jose Sharks ML,132,15.73%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NHL,Tampa Bay Lightning @ Vancouver Canucks,Vancouver Canucks ML,250,75.13%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,NHL,Utah Mammoth @ Vegas Golden Knights,Vegas Golden Knights ML,-129,-11.16%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,NHL,Philadelphia Flyers @ Los Angeles Kings,Los Angeles Kings ML,-159,-18.39%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Italo Gomes @ Manuel Del Valle,Manuel Del Valle ML,-200,-25.01%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Adam Borics @ AJ McKee,AJ McKee ML,-330,-34.6%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Fabian Edwards @ Costello Van Steenis,Costello Van Steenis ML,-125,-10.34%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Mark Ewen @ Gino van Steenis,Gino van Steenis ML,152,26.1%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Jose Augusto @ Linton Vassell,Linton Vassell ML,-145,-15.73%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Ali Taleb @ Marin Vetrila,Marin Vetrila ML,-250,-29.97%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Christian Soda @ Callum Haughian,Callum Haughian ML,-180,-22.47%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Daniel Konrad @ Jordan Vucenic,Jordan Vucenic ML,-170,-20.85%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,George McManus @ Joe Middleton,Joe Middleton ML,-450,-39.01%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Leon Naumann @ Steven Hill,Steven Hill ML,-120,-8.1%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Weslley Maia @ Ollie Sarwa,Ollie Sarwa ML,145,22.11%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Abdul-Kareem Al-Selwady @ Shem Rock,Shem Rock ML,110,4.84%,Pending,🥈⭐⭐⭐ Standard Play
-2026-03-18 18:18,UFC,Mantas Kondratavicius @ Antonio Trocoli,Antonio Trocoli ML,550,225.88%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Iwo Baraniewski @ Austen Lane,Austen Lane ML,500,200.33%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Mason Jones @ Axel Sola,Axel Sola ML,110,4.86%,Pending,🥈⭐⭐⭐ Standard Play
-2026-03-18 18:18,UFC,Louie Sutherland @ Brando Pericic,Brando Pericic ML,-255,-30.21%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Christian Leroy Duncan @ Roman Dolidze,Roman Dolidze ML,385,143.1%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Kurtis Campbell @ Danny Silva,Danny Silva ML,200,49.72%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Mario Pinto @ Felipe Franco,Felipe Franco ML,700,300.5%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Nathaniel Wood @ Losene Keita,Losene Keita ML,-230,-28.26%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Melissa Mullins @ Luana Carolina,Luana Carolina ML,-125,-9.46%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Luke Riley @ Michael Aswell,Michael Aswell ML,225,62.91%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Michael Page @ Sam Patterson,Sam Patterson ML,158,29.12%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Shanelle Dyer @ Ravena Oliveira,Ravena Oliveira ML,385,140.38%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Lerone Murphy @ Movsar Evloev,Movsar Evloev ML,-240,-29.47%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Adrian Yanez @ Ricky Simon,Ricky Simon ML,-148,-16.35%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Bruna Brasil @ Alexia Thainara,Alexia Thainara ML,-450,-38.9%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Bruno Lopes @ Navajo Stirling,Navajo Stirling ML,-415,-38.21%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Gabriella Fernandes @ Casey O'Neill,Casey O'Neill ML,-110,-4.66%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Lance Gibson Jr @ Chase Hooper,Chase Hooper ML,-260,-31.07%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Tofiq Musayev @ Ignacio Bahamondes,Ignacio Bahamondes ML,-265,-31.28%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Tyrell Fortune @ Marcin Tybura,Marcin Tybura ML,-102,-0.55%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Maycee Barber @ Alexa Grasso,Alexa Grasso ML,125,13.06%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Lerryan Douglas @ Julian Erosa,Julian Erosa ML,246,72.93%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Kyle Nelson @ Terrance Mckinney,Terrance Mckinney ML,-141,-14.56%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Yousri Belgaroui @ Mansur Abdul-Malik,Mansur Abdul-Malik ML,-148,-16.4%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Joseph Pyfer @ Israel Adesanya,Israel Adesanya ML,-106,-2.71%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Tatsuro Taira @ Joshua Van,Joshua Van ML,150,25.12%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Carlos Ulberg @ Jiri Prochazka,Jiri Prochazka ML,-128,-10.57%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Carlos Prates @ Jack Della Maddalena,Jack Della Maddalena ML,-110,-4.42%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Sean Strickland @ Khamzat Chimaev,Khamzat Chimaev ML,-440,-38.91%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Waldo Cortes-Acosta @ Alexander Volkov,Alexander Volkov ML,-148,-16.01%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Jan Blachowicz @ Bogdan Guskov,Bogdan Guskov ML,-155,-17.91%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Jeremy Stephens @ King Green,King Green ML,-275,-31.96%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Joaquin Buckley @ Sean Brady,Sean Brady ML,-200,-24.69%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Philipe Lins @ Francis Ngannou,Francis Ngannou ML,-1200,-45.88%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Gina Carano @ Ronda Rousey,Ronda Rousey ML,-500,-39.63%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Mike Perry @ Nate Diaz,Nate Diaz ML,190,44.6%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Ilia Topuria @ Islam Makhachev,Islam Makhachev ML,-234,-28.34%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Carlos Ulberg @ Alex Pereira,Alex Pereira ML,-185,-22.59%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Jiri Prochazka @ Alex Pereira,Alex Pereira ML,-300,-33.49%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Jon Jones @ Alex Pereira,Alex Pereira ML,210,55.03%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Carlos Ulberg @ Magomed Ankalaev,Magomed Ankalaev ML,-250,-30.23%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Steve Garcia Jr. @ Diego Lopes,Diego Lopes ML,-185,-23.02%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Kyle Daukaus @ Bo Nickal,Bo Nickal ML,-298,-33.01%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Michael Chandler @ Mauricio Ruffy,Mauricio Ruffy ML,-480,-39.23%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Aiemann Zahabi @ Sean O'Malley,Sean O'Malley ML,-345,-35.55%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Ciryl Gane @ Alex Pereira,Alex Pereira ML,-110,-4.28%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Justin Gaethje @ Ilia Topuria,Ilia Topuria ML,-520,-40.5%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Natalia Silva @ Valentina Shevchenko,Valentina Shevchenko ML,-250,-29.85%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Joshua Van @ Alexandre Pantoja,Alexandre Pantoja ML,-205,-25.48%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Ciryl Gane @ Tom Aspinall,Tom Aspinall ML,-235,-28.49%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Michael Morales @ Islam Makhachev,Islam Makhachev ML,-315,-34.12%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Mackenzie Dern @ Weili Zhang,Weili Zhang ML,-450,-39.19%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Petr Yan @ Merab Dvalishvili,Merab Dvalishvili ML,150,25.08%,Pending,🥇⭐⭐⭐⭐ Strong Play
-2026-03-18 18:18,UFC,Arman Tsarukyan @ Ilia Topuria,Ilia Topuria ML,-190,-23.76%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Jorge Masvidal @ Conor McGregor,Conor McGregor ML,-145,-15.45%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Conor McGregor @ Michael Chandler,Michael Chandler ML,-120,-8.57%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Kamaru Usman @ Islam Makhachev,Islam Makhachev ML,-310,-34.13%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Ciryl Gane @ Tom Aspinall,Tom Aspinall ML,-192,-24.46%,Pending,❌ PASS (Negative EV)
-2026-03-18 18:18,UFC,Kamaru Usman @ Islam Makhachev,Islam Makhachev ML,-330,-34.59%,Pending,❌ PASS (Negative EV)
+Timestamp,Sport,Game,Bet,Odds,EV,QES Rating
+2026-03-18 18:35,NCAAB,Prairie View Panthers @ Lehigh Mountain Hawks,Lehigh Mountain Hawks ML,-155,-1.44%,❌ PASS
+2026-03-18 18:35,NCAAB,Navy Midshipmen @ Wake Forest Demon Deacons,Wake Forest Demon Deacons ML,-500,-28.4%,❌ PASS
+2026-03-18 18:35,NCAAB,GW Revolutionaries @ Utah Valley Wolverines,Utah Valley Wolverines ML,-120,9.04%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NCAAB,Kent State Golden Flashes @ Illinois St Redbirds,Illinois St Redbirds ML,-210,-11.82%,❌ PASS
+2026-03-18 18:35,NCAAB,Dayton Flyers @ Bradley Braves,Bradley Braves ML,126,35.22%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NCAAB,Sam Houston St Bearkats @ New Mexico Lobos,New Mexico Lobos ML,-750,-32.16%,❌ PASS
+2026-03-18 18:35,NCAAB,Miami (OH) RedHawks @ SMU Mustangs,SMU Mustangs ML,-300,-20.24%,❌ PASS
+2026-03-18 18:35,NCAAB,Murray St Racers @ Nevada Wolf Pack,Nevada Wolf Pack ML,-365,-23.92%,❌ PASS
+2026-03-18 18:35,NCAAB,UIC Flames @ California Golden Bears,California Golden Bears ML,-250,-16.33%,❌ PASS
+2026-03-18 18:35,NCAAB,Saint Joseph's Hawks @ Colorado St Rams,Colorado St Rams ML,-250,-16.63%,❌ PASS
+2026-03-18 18:35,NCAAB,TCU Horned Frogs @ Ohio State Buckeyes,Ohio State Buckeyes ML,-135,3.95%,🥈⭐⭐⭐ VALUE
+2026-03-18 18:35,NCAAB,Troy Trojans @ Nebraska Cornhuskers,Nebraska Cornhuskers ML,-950,-33.78%,❌ PASS
+2026-03-18 18:35,NCAAB,South Florida Bulls @ Louisville Cardinals,Louisville Cardinals ML,-190,-8.76%,❌ PASS
+2026-03-18 18:35,NCAAB,High Point Panthers @ Wisconsin Badgers,Wisconsin Badgers ML,-450,-26.67%,❌ PASS
+2026-03-18 18:35,NCAAB,McNeese Cowboys @ Vanderbilt Commodores,Vanderbilt Commodores ML,-670,-31.33%,❌ PASS
+2026-03-18 18:35,NCAAB,North Dakota St Bison @ Michigan St Spartans,Michigan St Spartans ML,-1430,-35.97%,❌ PASS
+2026-03-18 18:35,NCAAB,Hawai'i Rainbow Warriors @ Arkansas Razorbacks,Arkansas Razorbacks ML,-1400,-35.98%,❌ PASS
+2026-03-18 18:35,NCAAB,VCU Rams @ North Carolina Tar Heels,North Carolina Tar Heels ML,-145,1.08%,❌ PASS
+2026-03-18 18:35,NCAAB,Texas Longhorns @ BYU Cougars,BYU Cougars ML,-135,4.03%,🥈⭐⭐⭐ VALUE
+2026-03-18 18:35,NCAAB,Texas A&M Aggies @ Saint Mary's Gaels,Saint Mary's Gaels ML,-159,-2.19%,❌ PASS
+2026-03-18 18:35,NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Illinois Fighting Illini ML,-8000,-39.44%,❌ PASS
+2026-03-18 18:35,NCAAB,Saint Louis Billikens @ Georgia Bulldogs,Georgia Bulldogs ML,-136,3.8%,🥈⭐⭐⭐ VALUE
+2026-03-18 18:35,NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Gonzaga Bulldogs ML,-4000,-38.86%,❌ PASS
+2026-03-18 18:35,NCAAB,Idaho Vandals @ Houston Cougars,Houston Cougars ML,-7500,-39.61%,❌ PASS
+2026-03-18 18:35,NCAAB,Santa Clara Broncos @ Kentucky Wildcats,Kentucky Wildcats ML,-150,0.02%,❌ PASS
+2026-03-18 18:35,NCAAB,Akron Zips @ Texas Tech Red Raiders,Texas Tech Red Raiders ML,-305,-20.67%,❌ PASS
+2026-03-18 18:35,NCAAB,Wright St Raiders @ Virginia Cavaliers,Virginia Cavaliers ML,-2200,-37.35%,❌ PASS
+2026-03-18 18:35,NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Iowa State Cyclones ML,-7000,-39.38%,❌ PASS
+2026-03-18 18:35,NCAAB,Hofstra Pride @ Alabama Crimson Tide,Alabama Crimson Tide ML,-715,-31.77%,❌ PASS
+2026-03-18 18:35,NCAAB,Utah State Aggies @ Villanova Wildcats,Villanova Wildcats ML,105,22.87%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NCAAB,Iowa Hawkeyes @ Clemson Tigers,Clemson Tigers ML,122,32.63%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NCAAB,Northern Iowa Panthers @ St. John's Red Storm,St. John's Red Storm ML,-520,-28.87%,❌ PASS
+2026-03-18 18:35,NCAAB,UCF Knights @ UCLA Bruins,UCLA Bruins ML,-235,-14.9%,❌ PASS
+2026-03-18 18:35,NCAAB,Queens University Royals @ Purdue Boilermakers,Purdue Boilermakers ML,-8000,-39.47%,❌ PASS
+2026-03-18 18:35,NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Kansas Jayhawks ML,-1100,-35.02%,❌ PASS
+2026-03-18 18:35,NCAAB,Furman Paladins @ UConn Huskies,UConn Huskies ML,-3500,-38.66%,❌ PASS
+2026-03-18 18:35,NCAAB,Missouri Tigers @ Miami Hurricanes,Miami Hurricanes ML,-130,6.26%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Golden State Warriors @ Boston Celtics,Boston Celtics ML,-590,-34.79%,❌ PASS
+2026-03-18 18:35,NBA,Oklahoma City Thunder @ Brooklyn Nets,Brooklyn Nets ML,1120,582.87%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Portland Trail Blazers @ Indiana Pacers,Indiana Pacers ML,540,257.47%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Toronto Raptors @ Chicago Bulls,Chicago Bulls ML,250,95.39%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Los Angeles Clippers @ New Orleans Pelicans,New Orleans Pelicans ML,-118,2.59%,🥈⭐⭐⭐ VALUE
+2026-03-18 18:35,NBA,Utah Jazz @ Minnesota Timberwolves,Minnesota Timberwolves ML,-737,-36.62%,❌ PASS
+2026-03-18 18:35,NBA,Atlanta Hawks @ Dallas Mavericks,Dallas Mavericks ML,275,109.25%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Denver Nuggets @ Memphis Grizzlies,Memphis Grizzlies ML,570,273.16%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NBA,Los Angeles Lakers @ Houston Rockets,Houston Rockets ML,-120,2.32%,❌ PASS
+2026-03-18 18:35,NHL,New Jersey Devils @ New York Rangers,New York Rangers ML,110,13.13%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,Pittsburgh Penguins @ Carolina Hurricanes,Carolina Hurricanes ML,-128,-3.97%,❌ PASS
+2026-03-18 18:35,NHL,Ottawa Senators @ Washington Capitals,Washington Capitals ML,116,16.22%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,St Louis Blues @ Calgary Flames,Calgary Flames ML,110,12.98%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,Dallas Stars @ Colorado Avalanche,Colorado Avalanche ML,-141,-8.41%,❌ PASS
+2026-03-18 18:35,NHL,Philadelphia Flyers @ Anaheim Ducks,Anaheim Ducks ML,-148,-9.84%,❌ PASS
+2026-03-18 18:35,NHL,Winnipeg Jets @ Boston Bruins,Boston Bruins ML,-135,-6.21%,❌ PASS
+2026-03-18 18:35,NHL,New York Rangers @ Columbus Blue Jackets,Columbus Blue Jackets ML,-218,-21.37%,❌ PASS
+2026-03-18 18:35,NHL,Montréal Canadiens @ Detroit Red Wings,Detroit Red Wings ML,-105,5.59%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,New York Islanders @ Ottawa Senators,Ottawa Senators ML,-140,-8.09%,❌ PASS
+2026-03-18 18:35,NHL,Chicago Blackhawks @ Minnesota Wild,Minnesota Wild ML,-240,-23.92%,❌ PASS
+2026-03-18 18:35,NHL,Seattle Kraken @ Nashville Predators,Nashville Predators ML,-129,-4.56%,❌ PASS
+2026-03-18 18:35,NHL,Florida Panthers @ Edmonton Oilers,Edmonton Oilers ML,-145,-9.02%,❌ PASS
+2026-03-18 18:35,NHL,Buffalo Sabres @ San Jose Sharks,San Jose Sharks ML,132,24.67%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,Tampa Bay Lightning @ Vancouver Canucks,Vancouver Canucks ML,250,88.2%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,NHL,Utah Mammoth @ Vegas Golden Knights,Vegas Golden Knights ML,-129,-4.71%,❌ PASS
+2026-03-18 18:35,NHL,Philadelphia Flyers @ Los Angeles Kings,Los Angeles Kings ML,-159,-12.43%,❌ PASS
+2026-03-18 18:35,MLB,New York Yankees @ San Francisco Giants,San Francisco Giants ML,104,6.77%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,MLB,Pittsburgh Pirates @ New York Mets,New York Mets ML,-128,-7.28%,❌ PASS
+2026-03-18 18:35,MLB,Chicago White Sox @ Milwaukee Brewers,Milwaukee Brewers ML,-197,-21.08%,❌ PASS
+2026-03-18 18:35,MLB,Washington Nationals @ Chicago Cubs,Chicago Cubs ML,-198,-21.25%,❌ PASS
+2026-03-18 18:35,MLB,Minnesota Twins @ Baltimore Orioles,Baltimore Orioles ML,-162,-15.24%,❌ PASS
+2026-03-18 18:35,MLB,Boston Red Sox @ Cincinnati Reds,Cincinnati Reds ML,135,23.07%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,MLB,Detroit Tigers @ San Diego Padres,San Diego Padres ML,126,18.26%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,MLB,Los Angeles Angels @ Houston Astros,Houston Astros ML,-190,-20.26%,❌ PASS
+2026-03-18 18:35,MLB,Texas Rangers @ Philadelphia Phillies,Philadelphia Phillies ML,-134,-8.8%,❌ PASS
+2026-03-18 18:35,MLB,Tampa Bay Rays @ St. Louis Cardinals,St. Louis Cardinals ML,100,4.6%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,MLB,Arizona Diamondbacks @ Los Angeles Dodgers,Los Angeles Dodgers ML,-212,-22.96%,❌ PASS
+2026-03-18 18:35,MLB,Cleveland Guardians @ Seattle Mariners,Seattle Mariners ML,-160,-14.93%,❌ PASS
+2026-03-18 18:35,MLB,Colorado Rockies @ Miami Marlins,Miami Marlins ML,-165,-16.04%,❌ PASS
+2026-03-18 18:35,SOCCER,Manchester United @ Bournemouth,Bournemouth ML,222,76.72%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Liverpool @ Brighton and Hove Albion,Brighton and Hove Albion ML,217,73.12%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Burnley @ Fulham,Fulham ML,-163,-11.36%,❌ PASS
+2026-03-18 18:35,SOCCER,Chelsea @ Everton,Everton ML,256,95.41%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Brentford @ Leeds United,Leeds United ML,151,37.9%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Sunderland @ Newcastle United,Newcastle United ML,-150,-8.86%,❌ PASS
+2026-03-18 18:35,SOCCER,West Ham United @ Aston Villa,Aston Villa ML,-102,8.07%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Nottingham Forest @ Tottenham Hotspur,Tottenham Hotspur ML,150,36.92%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Wolverhampton Wanderers @ West Ham United,West Ham United ML,-129,-3.01%,❌ PASS
+2026-03-18 18:35,SOCCER,Bournemouth @ Arsenal,Arsenal ML,-290,-26.62%,❌ PASS
+2026-03-18 18:35,SOCCER,Aston Villa @ Nottingham Forest,Nottingham Forest ML,162,43.71%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Everton @ Brentford,Brentford ML,120,20.04%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Brighton and Hove Albion @ Burnley,Burnley ML,320,129.18%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Newcastle United @ Crystal Palace,Crystal Palace ML,188,56.99%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Fulham @ Liverpool,Liverpool ML,-190,-16.31%,❌ PASS
+2026-03-18 18:35,SOCCER,Tottenham Hotspur @ Sunderland,Sunderland ML,175,50.2%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Manchester City @ Chelsea,Chelsea ML,173,48.67%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,SOCCER,Leeds United @ Manchester United,Manchester United ML,-170,-13.18%,❌ PASS
+2026-03-18 18:35,UFC,Italo Gomes @ Manuel Del Valle,Manuel Del Valle ML,-200,-23.98%,❌ PASS
+2026-03-18 18:35,UFC,Adam Borics @ AJ McKee,AJ McKee ML,-330,-33.95%,❌ PASS
+2026-03-18 18:35,UFC,Fabian Edwards @ Costello Van Steenis,Costello Van Steenis ML,-125,-9.1%,❌ PASS
+2026-03-18 18:35,UFC,Mark Ewen @ Gino van Steenis,Gino van Steenis ML,152,28.37%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Jose Augusto @ Linton Vassell,Linton Vassell ML,-145,-14.28%,❌ PASS
+2026-03-18 18:35,UFC,Ali Taleb @ Marin Vetrila,Marin Vetrila ML,-250,-28.8%,❌ PASS
+2026-03-18 18:35,UFC,Christian Soda @ Callum Haughian,Callum Haughian ML,-180,-20.92%,❌ PASS
+2026-03-18 18:35,UFC,Daniel Konrad @ Jordan Vucenic,Jordan Vucenic ML,-170,-19.37%,❌ PASS
+2026-03-18 18:35,UFC,George McManus @ Joe Middleton,Joe Middleton ML,-450,-38.18%,❌ PASS
+2026-03-18 18:35,UFC,Leon Naumann @ Steven Hill,Steven Hill ML,-120,-6.96%,❌ PASS
+2026-03-18 18:35,UFC,Weslley Maia @ Ollie Sarwa,Ollie Sarwa ML,145,24.02%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Abdul-Kareem Al-Selwady @ Shem Rock,Shem Rock ML,110,5.82%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Mantas Kondratavicius @ Antonio Trocoli,Antonio Trocoli ML,550,226.92%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Iwo Baraniewski @ Austen Lane,Austen Lane ML,500,203.14%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Mason Jones @ Axel Sola,Axel Sola ML,110,6.6%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Louie Sutherland @ Brando Pericic,Brando Pericic ML,-255,-29.66%,❌ PASS
+2026-03-18 18:35,UFC,Christian Leroy Duncan @ Roman Dolidze,Roman Dolidze ML,385,144.9%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Kurtis Campbell @ Danny Silva,Danny Silva ML,200,51.0%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Mario Pinto @ Felipe Franco,Felipe Franco ML,700,303.06%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Nathaniel Wood @ Losene Keita,Losene Keita ML,-230,-27.6%,❌ PASS
+2026-03-18 18:35,UFC,Melissa Mullins @ Luana Carolina,Luana Carolina ML,-125,-8.77%,❌ PASS
+2026-03-18 18:35,UFC,Luke Riley @ Michael Aswell,Michael Aswell ML,225,64.6%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Michael Page @ Sam Patterson,Sam Patterson ML,158,31.1%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Shanelle Dyer @ Ravena Oliveira,Ravena Oliveira ML,385,146.86%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Lerone Murphy @ Movsar Evloev,Movsar Evloev ML,-240,-28.5%,❌ PASS
+2026-03-18 18:35,UFC,Adrian Yanez @ Ricky Simon,Ricky Simon ML,-148,-15.09%,❌ PASS
+2026-03-18 18:35,UFC,Bruna Brasil @ Alexia Thainara,Alexia Thainara ML,-450,-38.28%,❌ PASS
+2026-03-18 18:35,UFC,Bruno Lopes @ Navajo Stirling,Navajo Stirling ML,-415,-37.63%,❌ PASS
+2026-03-18 18:35,UFC,Gabriella Fernandes @ Casey O'Neill,Casey O'Neill ML,-110,-3.31%,❌ PASS
+2026-03-18 18:35,UFC,Lance Gibson Jr @ Chase Hooper,Chase Hooper ML,-260,-30.03%,❌ PASS
+2026-03-18 18:35,UFC,Tofiq Musayev @ Ignacio Bahamondes,Ignacio Bahamondes ML,-265,-30.3%,❌ PASS
+2026-03-18 18:35,UFC,Tyrell Fortune @ Marcin Tybura,Marcin Tybura ML,-102,0.3%,❌ PASS
+2026-03-18 18:35,UFC,Maycee Barber @ Alexa Grasso,Alexa Grasso ML,125,14.07%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Lerryan Douglas @ Julian Erosa,Julian Erosa ML,246,75.11%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Kyle Nelson @ Terrance Mckinney,Terrance Mckinney ML,-141,-13.42%,❌ PASS
+2026-03-18 18:35,UFC,Yousri Belgaroui @ Mansur Abdul-Malik,Mansur Abdul-Malik ML,-148,-15.0%,❌ PASS
+2026-03-18 18:35,UFC,Joseph Pyfer @ Israel Adesanya,Israel Adesanya ML,-106,-2.12%,❌ PASS
+2026-03-18 18:35,UFC,Tatsuro Taira @ Joshua Van,Joshua Van ML,150,26.54%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Carlos Ulberg @ Jiri Prochazka,Jiri Prochazka ML,-128,-9.99%,❌ PASS
+2026-03-18 18:35,UFC,Carlos Prates @ Jack Della Maddalena,Jack Della Maddalena ML,-110,-3.55%,❌ PASS
+2026-03-18 18:35,UFC,Sean Strickland @ Khamzat Chimaev,Khamzat Chimaev ML,-440,-38.14%,❌ PASS
+2026-03-18 18:35,UFC,Waldo Cortes-Acosta @ Alexander Volkov,Alexander Volkov ML,-148,-15.15%,❌ PASS
+2026-03-18 18:35,UFC,Jan Blachowicz @ Bogdan Guskov,Bogdan Guskov ML,-155,-16.91%,❌ PASS
+2026-03-18 18:35,UFC,Jeremy Stephens @ King Green,King Green ML,-275,-31.03%,❌ PASS
+2026-03-18 18:35,UFC,Joaquin Buckley @ Sean Brady,Sean Brady ML,-200,-23.74%,❌ PASS
+2026-03-18 18:35,UFC,Philipe Lins @ Francis Ngannou,Francis Ngannou ML,-1200,-45.08%,❌ PASS
+2026-03-18 18:35,UFC,Gina Carano @ Ronda Rousey,Ronda Rousey ML,-500,-39.25%,❌ PASS
+2026-03-18 18:35,UFC,Mike Perry @ Nate Diaz,Nate Diaz ML,190,46.41%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Ilia Topuria @ Islam Makhachev,Islam Makhachev ML,-234,-27.93%,❌ PASS
+2026-03-18 18:35,UFC,Carlos Ulberg @ Alex Pereira,Alex Pereira ML,-185,-21.9%,❌ PASS
+2026-03-18 18:35,UFC,Jiri Prochazka @ Alex Pereira,Alex Pereira ML,-300,-32.41%,❌ PASS
+2026-03-18 18:35,UFC,Jon Jones @ Alex Pereira,Alex Pereira ML,210,56.85%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Carlos Ulberg @ Magomed Ankalaev,Magomed Ankalaev ML,-250,-29.32%,❌ PASS
+2026-03-18 18:35,UFC,Steve Garcia Jr. @ Diego Lopes,Diego Lopes ML,-185,-22.16%,❌ PASS
+2026-03-18 18:35,UFC,Kyle Daukaus @ Bo Nickal,Bo Nickal ML,-298,-32.68%,❌ PASS
+2026-03-18 18:35,UFC,Michael Chandler @ Mauricio Ruffy,Mauricio Ruffy ML,-480,-38.72%,❌ PASS
+2026-03-18 18:35,UFC,Aiemann Zahabi @ Sean O'Malley,Sean O'Malley ML,-345,-34.92%,❌ PASS
+2026-03-18 18:35,UFC,Ciryl Gane @ Alex Pereira,Alex Pereira ML,-110,-3.45%,❌ PASS
+2026-03-18 18:35,UFC,Justin Gaethje @ Ilia Topuria,Ilia Topuria ML,-520,-39.74%,❌ PASS
+2026-03-18 18:35,UFC,Natalia Silva @ Valentina Shevchenko,Valentina Shevchenko ML,-250,-29.08%,❌ PASS
+2026-03-18 18:35,UFC,Joshua Van @ Alexandre Pantoja,Alexandre Pantoja ML,-205,-24.59%,❌ PASS
+2026-03-18 18:35,UFC,Ciryl Gane @ Tom Aspinall,Tom Aspinall ML,-235,-27.35%,❌ PASS
+2026-03-18 18:35,UFC,Michael Morales @ Islam Makhachev,Islam Makhachev ML,-315,-33.13%,❌ PASS
+2026-03-18 18:35,UFC,Mackenzie Dern @ Weili Zhang,Weili Zhang ML,-450,-37.98%,❌ PASS
+2026-03-18 18:35,UFC,Petr Yan @ Merab Dvalishvili,Merab Dvalishvili ML,150,27.13%,🥇⭐⭐⭐⭐ STRONG
+2026-03-18 18:35,UFC,Arman Tsarukyan @ Ilia Topuria,Ilia Topuria ML,-190,-23.15%,❌ PASS
+2026-03-18 18:35,UFC,Jorge Masvidal @ Conor McGregor,Conor McGregor ML,-145,-14.54%,❌ PASS
+2026-03-18 18:35,UFC,Conor McGregor @ Michael Chandler,Michael Chandler ML,-120,-7.39%,❌ PASS
+2026-03-18 18:35,UFC,Kamaru Usman @ Islam Makhachev,Islam Makhachev ML,-310,-33.38%,❌ PASS
+2026-03-18 18:35,UFC,Ciryl Gane @ Tom Aspinall,Tom Aspinall ML,-192,-23.05%,❌ PASS
+2026-03-18 18:35,UFC,Kamaru Usman @ Islam Makhachev,Islam Makhachev ML,-330,-34.18%,❌ PASS
