@@ -1,193 +1,165 @@
-import numpy as np
 import pandas as pd
-import time
-import os
-from datetime import datetime
-from github import Github, GithubException, Auth
+import numpy as np
 import requests
+import datetime
+import os
+import subprocess
 
-def get_live_ncaab_games():
-    """Fetches today's live College Basketball slate using ESPN's public API."""
-    print("📡 Pinging ESPN API for today's live NCAAB slate...")
-    url = "http://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard"
+# ==========================================
+# 1. QUANT SYNDICATE MASTER PROTOCOL
+# ==========================================
+EV_THRESHOLDS = {
+    "NCAAB":  {"Spread": 0.03,  "Total": 0.03,  "ML": 0.035},
+    "NCAAF":  {"Spread": 0.03,  "Total": 0.03,  "ML": 0.035},
+    "NFL":    {"Spread": 0.015, "Total": 0.015, "ML": 0.02},
+    "NBA":    {"Spread": 0.02,  "Total": 0.02,  "ML": 0.025},
+    "MLB":    {"Spread": 0.02,  "Total": 0.02,  "ML": 0.015}, 
+    "NHL":    {"Spread": 0.03,  "Total": 0.025, "ML": 0.02},  
+    "SOCCER": {"Spread": 0.02,  "Total": 0.02,  "ML": 0.025}, 
+    "UFC":    {"Spread": 0.00,  "Total": 0.03,  "ML": 0.03}   
+}
+
+API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" 
+
+# ==========================================
+# 2. THE MARKET INTELLIGENCE API (PULL LIVE ODDS)
+# ==========================================
+def get_live_vegas_odds(sport="basketball_ncaab"):
+    print(f"📡 Pinging Vegas API for {sport} lines...")
+    url = f"https://api.the-odds-api.com/v4/sports/{sport}/odds/"
+    params = {
+        'apiKey': API_KEY,
+        'regions': 'us',
+        'markets': 'h2h', # Just pulling Moneyline to test the plumbing tonight
+        'oddsFormat': 'american'
+    }
     
-    try:
-        response = requests.get(url)
-        data = response.json()
-        games = []
-        
-        for event in data.get('events', []):
-            competitors = event['competitions'][0]['competitors']
-            
-            # Isolate the Home and Away teams
-            home_team = next(c['team']['shortDisplayName'] for c in competitors if c['homeAway'] == 'home')
-            away_team = next(c['team']['shortDisplayName'] for c in competitors if c['homeAway'] == 'away')
-            
-            games.append((away_team, home_team))
-            
-        print(f"✅ Found {len(games)} live NCAAB games on the board.")
-        return games
-    except Exception as e:
-        print(f"❌ API Failure: {e}")
+    response = requests.get(url, params=params)
+    
+    if response.status_code != 200:
+        print(f"❌ API Error: {response.status_code}. Check your API Key.")
         return []
-# ==========================================
-# 1. HELPER FUNCTIONS
-# ==========================================
-def get_american_odds(prob):
-    """Converts a true probability into American Fair Odds."""
-    if prob <= 0: return "+99999"
-    if prob >= 1.0: return "-99999"
-    if prob > 0.50: return int((prob / (1.0 - prob)) * -100)
-    else: return int((100.0 / prob) - 100)
-
-# ==========================================
-# 2. THE UNIVERSAL API ADAPTER (REALISM TUNED)
-# ==========================================
-def get_universal_team_stats(sport, team_name):
-    """
-    Tuned Baselines for Realistic Scoring. 
-    NCAAB averages ~71, NFL ~23, NBA ~114.
-    """
-    time.sleep(0.1) 
-    
-    baselines = {
-        "NBA":   {'off': 114.5, 'def': 114.5, 'vol': 12.0},
-        "NCAAB": {'off': 71.2,  'def': 71.2,  'vol': 10.5}, # Tuned for College
-        "NFL":   {'off': 23.2,  'def': 23.2,  'vol': 13.5},
-        "NCAAF": {'off': 28.5,  'def': 28.5,  'vol': 14.5},
-        "NHL":   {'off': 3.1,   'def': 3.1,   'vol': 1.1}, 
-        "MLB":   {'off': 4.4,   'def': 4.4,   'vol': 1.9}, 
-        "SOCCER":{'off': 1.4,   'def': 1.4,   'vol': 0.8}  
-    }
-    
-    base = baselines.get(sport.upper(), baselines["NBA"])
-    # Random modifier to simulate team strength differences
-    modifier = np.random.uniform(-0.08, 0.08) 
-    
-    return {
-        'name': team_name,
-        'off_mean': base['off'] * (1 + modifier),
-        'def_mean': base['def'] * (1 - modifier), 
-        'volatility': base['vol']
-    }
-
-# ==========================================
-# 3. THE MULTI-SPORT DPIM SIMULATOR
-# ==========================================
-def simulate_universal_match(sport, team_a_input, team_b_input, target_odds=-110):
-    sport = sport.upper()
-    print(f"🤖 Simulating {sport}: {team_a_input} @ {team_b_input}...")
-    
-    team_a = get_universal_team_stats(sport, team_a_input)
-    team_b = get_universal_team_stats(sport, team_b_input)
-    
-    # Matchup Blending (DPIM)
-    a_expected = (team_a['off_mean'] + team_b['def_mean']) / 2
-    b_expected = (team_b['off_mean'] + team_a['def_mean']) / 2
-    
-    simulations = 100000
-    
-    # --- DYNAMIC PHYSICS ENGINE ---
-    if sport in ["NBA", "NCAAB", "NFL", "NCAAF"]:
-        # Basketball/Football uses Normal Distribution for 'Chunky' scoring
-        raw_a = np.random.normal(loc=a_expected, scale=team_a['volatility'], size=simulations)
-        raw_b = np.random.normal(loc=b_expected, scale=team_b['volatility'], size=simulations)
-    else:
-        # Soccer/Hockey/Baseball uses Poisson for 'Event-based' scoring
-        raw_a = np.random.poisson(lam=a_expected, size=simulations)
-        raw_b = np.random.poisson(lam=b_expected, size=simulations)
-    
-    # REALISM: Round to whole integers and prevent negative scores
-    team_a_scores = np.maximum(np.round(raw_a), 0).astype(int)
-    team_b_scores = np.maximum(np.round(raw_b), 0).astype(int)
-    
-    # OT Tie-Breaker Logic (Prevents ties in sports that don't have them)
-    ties = team_a_scores == team_b_scores
-    if sport in ["NBA", "NCAAB", "NFL", "NHL"]:
-        ot_winner = np.random.rand(simulations) > 0.5
-        team_a_scores[ties & ot_winner] += 1
-        team_b_scores[ties & ~ot_winner] += 1
-
-    a_win_prob = np.sum(team_a_scores > team_b_scores) / simulations
-    b_win_prob = 1.0 - a_win_prob
-    
-    # Calculate EV based on standard -110 juice (1.909 decimal)
-    decimal_odds = 1.909 
-    if a_win_prob > b_win_prob:
-        bet_team = team_a['name']
-        ev_perc = ((a_win_prob * decimal_odds) - 1) * 100
-    else:
-        bet_team = team_b['name']
-        ev_perc = ((b_win_prob * decimal_odds) - 1) * 100
-
-    return {
-        "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "Sport": sport,
-        "Game": f"{team_a['name']} @ {team_b['name']}",
-        "Bet": f"{bet_team} ML",
-        "Odds": target_odds,
-        "EV": f"{ev_perc:.1f}%",
-        "Result": "Pending", # Added to prevent Dashboard crashes
-        "QES": round(ev_perc * 0.85, 2) # Quant Edge Score calculation
-    }
-
-# ==========================================
-# 4. GITHUB CLOUD UPLOADER (SECURE & MODERN)
-# ==========================================
-def push_to_github(file_path="ev_log.csv", repo_name="hgully/quant-syndicate"):
-    print("\n☁️ Connecting to GitHub Vault...")
-    token = os.getenv("GITHUB_TOKEN") 
-    try:
-        auth = Auth.Token(token)
-        g = Github(auth=auth)
-        repo = g.get_repo(repo_name)
         
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
+    odds_data = response.json()
+    live_games = []
+    
+    for game in odds_data:
+        home_team = game['home_team']
+        away_team = game['away_team']
+        
+        best_home_ml = -10000
+        best_away_ml = -10000
+        
+        # Scan all bookmakers for the absolute best price (Line Shopping)
+        for book in game.get('bookmakers', []):
+            for market in book.get('markets', []):
+                if market['key'] == 'h2h':
+                    for outcome in market['outcomes']:
+                        if outcome['name'] == home_team and outcome['price'] > best_home_ml:
+                            best_home_ml = outcome['price']
+                        elif outcome['name'] == away_team and outcome['price'] > best_away_ml:
+                            best_away_ml = outcome['price']
+                            
+        # Only add games that have actual odds listed
+        if best_home_ml != -10000 and best_away_ml != -10000:
+            live_games.append({
+                "Sport": "NCAAB",
+                "Game": f"{away_team} @ {home_team}",
+                "Home Team": home_team,
+                "Away Team": away_team,
+                "Home ML Best": best_home_ml,
+                "Away ML Best": best_away_ml
+            })
             
-        # We explicitly tell it to use the 'main' branch
-        contents = repo.get_contents(file_path, ref="main") 
-        repo.update_file(
-            path=contents.path, 
-            message=f"🤖 Update: {datetime.now().strftime('%H:%M')}", 
-            content=content, 
-            sha=contents.sha,
-            branch="main" # <--- FORCE MAIN BRANCH
-        )
-        print(f"✅ Success! Pushed to MAIN branch.")
-    except Exception as e:
-        print(f"❌ PUSH FAILED: {e}")
+    print(f"✅ Secured live lines for {len(live_games)} games.")
+    return live_games
 
 # ==========================================
-# 5. MASTER EXECUTION PIPELINE
+# 3. MATH ENGINE (AMERICAN ODDS)
 # ==========================================
-if __name__ == "__main__":
-    print("=" * 60)
-    print("🚀 QUANT SYNDICATE: LIVE API SLATE GENERATOR")
-    print("=" * 60)
+def calculate_ev(win_prob, american_odds):
+    if american_odds > 0:
+        payout_multiplier = (american_odds / 100.0) + 1.0
+    else:
+        payout_multiplier = (100.0 / abs(american_odds)) + 1.0
+    return (win_prob * payout_multiplier) - 1.0
+
+# ==========================================
+# 4. MONTE CARLO SIMULATOR (n=100k)
+# ==========================================
+def simulate_game(away_rating, home_rating, simulations=100000):
+    away_scores = np.random.normal(loc=away_rating, scale=10.0, size=simulations)
+    home_scores = np.random.normal(loc=home_rating, scale=10.0, size=simulations)
     
+    home_ml_prob = np.sum(home_scores > away_scores) / simulations
+    away_ml_prob = np.sum(away_scores > home_scores) / simulations
+    
+    return {"Home ML Prob": home_ml_prob, "Away ML Prob": away_ml_prob}
+
+# ==========================================
+# 5. THE BET GAUNTLET (EVALUATOR)
+# ==========================================
+def evaluate_play(sport, market_type, win_prob, american_odds):
+    ev = calculate_ev(win_prob, american_odds)
+    threshold = EV_THRESHOLDS.get(sport, EV_THRESHOLDS["NCAAB"]).get(market_type, 0.03)
+    
+    if ev >= (threshold + 0.02):
+        rating = "🥇⭐⭐⭐⭐ Strong Play"
+    elif ev >= threshold:
+        rating = "🥈⭐⭐⭐ Standard Play"
+    elif ev > 0:
+        rating = "❌ PASS (Low Edge)"
+    else:
+        rating = "❌ PASS (Negative EV)"
+        
+    return round(ev * 100, 2), rating
+
+# ==========================================
+# 6. MASTER EXECUTION LOOP
+# ==========================================
+def run_daily_slate():
+    print(f"\n[{datetime.datetime.now()}] 🚀 INITIALIZING QUANT SYNDICATE ENGINE...")
+    
+    live_games = get_live_vegas_odds("basketball_ncaab")
+    
+    if not live_games:
+        print("⚠️ No live games found or API hit a wall. Exiting.")
+        return
+
     results = []
     
-    # 1. Auto-Fetch the real games for today
-    todays_ncaab_games = get_live_ncaab_games()
-    
-    # 2. Feed every real game into your 100k Simulator
-    for away, home in todays_ncaab_games:
-        results.append(simulate_universal_match("NCAAB", away, home))
+    print("\n🤖 Running 100,000 Monte Carlo Sims per game...")
+    for g in live_games:
+        # Note: Since we haven't built the ML scraper for true Power Ratings yet, 
+        # we give both teams a flat 75 rating just to test the API plumbing.
+        sims = simulate_game(away_rating=75.0, home_rating=75.0)
         
-    # Failsafe: If no college games are playing today, run a test game
-    if len(results) == 0:
-        print("⚠️ No NCAAB games found today. Running diagnostic...")
-        results.append(simulate_universal_match("NBA", "Suns", "Celtics"))
-    
-    # 3. Save to CSV
+        # Evaluate Home Team
+        home_ev, home_rating = evaluate_play("NCAAB", "ML", sims["Home ML Prob"], g["Home ML Best"])
+        results.append({
+            "Timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "Sport": "NCAAB",
+            "Game": g["Game"],
+            "Bet": f"{g['Home Team']} ML",
+            "Odds": g["Home ML Best"],
+            "EV": f"{home_ev}%",
+            "Result": "Pending",
+            "QES Rating": home_rating
+        })
+        
     df = pd.DataFrame(results)
-    csv_file = "ev_log.csv"
-    df.to_csv(csv_file, index=False)
-    print(f"\n💾 Local Database ({csv_file}) ready with {len(results)} live games.")
     
-    # 4. Push to GitHub
-    push_to_github(file_path=csv_file)
-    print("=" * 60)
-    print("🏁 PIPELINE COMPLETE")
-    print("=" * 60)
+    df.to_csv("ev_log.csv", index=False)
+        
+    print("\n💾 Saved to Local Vault. Pushing to GitHub...")
+
+    try:
+        subprocess.run(["git", "add", "ev_log.csv"], check=True)
+        subprocess.run(["git", "commit", "-m", "Live Odds API Sync"], check=True)
+        subprocess.run(["git", "push"], check=True)
+        print("☁️ SUCCESS: Live Vegas Slate beamed to Dashboard.")
+    except Exception as e:
+        print("⚠️ Cloud sync failed. Check GitHub token.")
+
+if __name__ == "__main__":
+    run_daily_slate()
