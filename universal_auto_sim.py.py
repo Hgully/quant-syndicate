@@ -34,8 +34,8 @@ SPORT_CONFIGS = {
 # 2. TELEGRAM SIGNAL BROADCASTER
 # ==========================================
 def send_telegram_alert(message):
-    if TELEGRAM_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN_HERE":
-        return # Skip if token isn't set yet
+    if TELEGRAM_TOKEN == "7786273213:AAH_reyqYhuiw5UyujV7KEVoN4dDmFVjPNM":
+        return 
         
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
@@ -66,7 +66,7 @@ def fetch_global_intelligence():
         if not config["url"]: continue
         
         try:
-            time.sleep(1.5) # Anti-bot delay
+            time.sleep(1.5)
             res = requests.get(config["url"], headers=headers, timeout=15)
             
             if res.status_code != 200:
@@ -124,7 +124,6 @@ def simulate_match(away, home, intel, config):
         return 0.0
 
     a_r, h_r = get_rating(away), get_rating(home)
-    # HFA: Home Court (3.5), NBA (2.4), NHL/MLB/Other (0.2)
     hfa = 3.5 if config["name"] == "NCAAB" else 2.4 if config["name"] == "NBA" else 0.2
     
     a_sims = np.random.normal(config["avg"] + a_r, config["var"], 100000)
@@ -132,7 +131,7 @@ def simulate_match(away, home, intel, config):
     return np.sum(h_sims > a_sims) / 100000
 
 # ==========================================
-# 5. EXECUTION LOOP (SNIPER MODE)
+# 5. EXECUTION LOOP (SNIPER + TIME FILTER)
 # ==========================================
 def run_global_engine():
     print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] 🚀 SYNDICATE ENGINE INITIALIZED")
@@ -150,6 +149,18 @@ def run_global_engine():
                 games = res.json()
                 print(f"📡 Sweeping {len(games)} {config['name']} games...")
                 for g in games:
+                    # ---- THE TIME FILTER ----
+                    commence_time_str = g.get('commence_time', '')
+                    if commence_time_str:
+                        # Convert Vegas API time to something Python can read
+                        clean_time = commence_time_str.replace('Z', '+00:00')
+                        match_time = datetime.datetime.fromisoformat(clean_time)
+                        now = datetime.datetime.now(datetime.timezone.utc)
+                        
+                        # If the game is more than 7 days away, skip it!
+                        if (match_time - now).days > 7:
+                            continue 
+                    
                     h_t, a_t = g.get('home_team'), g.get('away_team')
                     best_ml = -10000
                     for b in g.get('bookmakers', []):
@@ -166,7 +177,6 @@ def run_global_engine():
                     ev = calculate_ev(prob, best_ml)
                     
                     # ---- THE SNIPER FILTER ----
-                    # Check if the engine actually has data for these teams
                     sport_intel = global_intel.get(config["name"], {})
                     has_data = False
                     for key in sport_intel.keys():
@@ -176,7 +186,7 @@ def run_global_engine():
                     
                     target = EV_THRESHOLDS.get(config["name"], 0.03)
                     
-                    # Grade the Edge (Only flag STRONG if we actually have data)
+                    # Grade the Edge
                     if ev >= (target + 0.02) and has_data: 
                         rating = "🥇⭐⭐⭐⭐ STRONG"
                         alert_msg = f"🚨 *STRONG PLAY DETECTED*\n\n*Sport:* {config['name']}\n*Match:* {a_t} @ {h_t}\n*Bet:* {h_t} ML ({best_ml})\n*EV Edge:* {round(ev*100, 2)}%"
@@ -200,7 +210,7 @@ def run_global_engine():
         pd.DataFrame(results).to_csv("ev_log.csv", index=False)
         try:
             subprocess.run(["git", "add", "."], check=True)
-            subprocess.run(["git", "commit", "-m", "Signal Sync - Sniper Mode"], check=True)
+            subprocess.run(["git", "commit", "-m", "Signal Sync - Time Filter Active"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("\n☁️ SYNDICATE TERMINAL UPDATED (ALL SYSTEMS GO).")
             
@@ -208,7 +218,7 @@ def run_global_engine():
             for play in strong_plays:
                 send_telegram_alert(play)
                 print(f"📣 Signal Sent to Telegram: {play.splitlines()[2]}")
-                time.sleep(0.5) # Slight delay so Telegram doesn't block the bot for spamming
+                time.sleep(0.5) 
                 
         except Exception as e: 
             print(f"⚠️ Git Push Failed: {e}")
