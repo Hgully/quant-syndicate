@@ -1,84 +1,73 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
+import os
 
-# Page config
-st.set_page_config(page_title="Quant Syndicate Terminal", layout="wide", page_icon="🎯")
+# Set Page Config for Dark Mode / Professional Look
+st.set_page_config(page_title="Quant Syndicate AI Terminal", layout="wide")
+
+# Custom CSS to make it look like a high-end terminal
+st.markdown("""
+    <style>
+    .main {
+        background-color: #0e1117;
+    }
+    div[data-testid="stExpander"] {
+        border: 1px solid #4a4a4a;
+    }
+    </style>
+    """, unsafe_allow_stdio=True)
 
 st.title("🎯 Quant Syndicate AI Terminal")
 st.markdown("---")
 
-# 1. Load the Database
-@st.cache_data(ttl=30) 
-def load_data():
-    try:
-        return pd.read_csv("ev_log.csv")
-    except FileNotFoundError:
-        return pd.DataFrame()
-
-df = load_data()
-
-# Create the Tabs
-tab1, tab2 = st.tabs(["📊 Global Slate", "🤖 Master Simulation & QES Report"])
-
-with tab1:
-    if df.empty:
-        st.warning("No data found. Run the engine on your iMac.")
-    else:
-        st.markdown("### 🎛️ Terminal Filters")
-        f_col1, f_col2 = st.columns(2)
-        with f_col1:
-            sport_list = df['Sport'].unique().tolist()
-            selected_sports = st.multiselect("Filter by Sport:", sport_list, default=sport_list)
-        with f_col2:
-            hide_passes = st.checkbox("Show Only +EV Edges (Hide ❌ PASS)")
-
-        # Filter Logic
-        display_df = df[df['Sport'].isin(selected_sports)]
-        if hide_passes:
-            display_df = display_df[~display_df['QES Rating'].str.contains("❌")]
-
-        st.dataframe(display_df, use_container_width=True, hide_index=True)
-
-with tab2:
-    st.header("🤖 Monte Carlo Simulation Lab")
-    st.info("Manually test edges by injecting custom Power Ratings below.")
+# 1. Load the Data
+if os.path.exists("ev_log.csv"):
+    df = pd.read_csv("ev_log.csv")
     
-    sim_col1, sim_col2 = st.columns(2)
+    # 2. Sidebar Filters
+    st.sidebar.header("🕹️ Terminal Controls")
     
-    with sim_col1:
-        st.subheader("Team Metrics")
-        away_team = st.text_input("Away Team Name", "Away Team")
-        home_team = st.text_input("Home Team Name", "Home Team")
-        away_rank = st.slider(f"{away_team} Power Rating", 60.0, 130.0, 100.0)
-        home_rank = st.slider(f"{home_team} Power Rating", 60.0, 130.0, 100.0)
-        variance = st.number_input("Scoring Variance (Standard Deviation)", value=12.0)
+    # Sport Filter
+    if 'Sport' in df.columns:
+        all_sports = sorted(df['Sport'].unique().tolist())
+        selected_sports = st.sidebar.multiselect("Filter by Sport:", all_sports, default=all_sports)
+    
+    # Market Filter
+    if 'Market' in df.columns:
+        all_markets = sorted(df['Market'].unique().tolist())
+        selected_markets = st.sidebar.multiselect("Filter by Market:", all_markets, default=all_markets)
 
-    with sim_col2:
-        st.subheader("Market Odds")
-        away_ml = st.number_input(f"{away_team} Moneyline", value=-110)
-        home_ml = st.number_input(f"{home_team} Moneyline", value=-110)
-        sim_count = st.select_slider("Simulations", options=[1000, 10000, 100000], value=10000)
+    # Filtering Logic
+    mask = (df['Sport'].isin(selected_sports)) & (df['Market'].isin(selected_markets))
+    filtered_df = df[mask]
 
-    if st.button("🚀 Run 100k Monte Carlo Sims"):
-        # The Math Engine
-        away_scores = np.random.normal(away_rank, variance, sim_count)
-        home_scores = np.random.normal(home_rank, variance, sim_count)
-        
-        home_wins = np.sum(home_scores > away_scores)
-        home_prob = home_wins / sim_count
-        
-        st.success(f"Simulation Complete: {home_team} wins {home_prob:.2%} of the time.")
-        
-        # Display Results
-        res_col1, res_col2 = st.columns(2)
-        res_col1.metric(f"{home_team} Win Prob", f"{home_prob:.2%}")
-        
-        # Calculate EV
-        if home_ml > 0:
-            payout = (home_ml / 100) + 1
+    # 3. High-Value Alert Section (Diamonds and Gold Only)
+    st.subheader("🚀 Elite Syndicate Signals")
+    if 'Verdict' in filtered_df.columns:
+        top_plays = filtered_df[filtered_df['Verdict'].isin(['💎', '🥇'])]
+        if not top_plays.empty:
+            st.dataframe(top_plays, use_container_width=True, hide_index=True)
         else:
-            payout = (100 / abs(home_ml)) + 1
-        
-        ev = (home_prob * payout) - 1
-        res_col2.metric("Expected Value (EV)", f"{ev:.2%}")
+            st.info("Scanning board for 💎 Max or 🥇 Strong plays...")
+
+    st.markdown("---")
+
+    # 4. Global Board (The Full List)
+    st.subheader("📊 Global Board")
+    
+    # Defining your exact column order
+    column_order = ["Market", "Selection", "Win Prob", "Fair Odds", "Cur", "Edge (EV)", "QES", "Verdict", "Rating", "Sport"]
+    
+    # Only show columns that actually exist in the CSV
+    actual_cols = [c for c in column_order if c in filtered_df.columns]
+    display_df = filtered_df[actual_cols]
+    
+    # Display the interactive table
+    st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+else:
+    st.warning("⚠️ No data found. Run the engine on your iMac to generate the first log.")
+
+st.sidebar.markdown("---")
+st.sidebar.write("✅ System Status: **ACTIVE**")
+st.sidebar.write(f"🕒 Last Update: {pd.to_datetime('now').strftime('%I:%M %p')}")
