@@ -15,8 +15,10 @@ EV_THRESHOLDS = {
     "MLB": 0.015, "NHL": 0.02, "SOCCER": 0.025, "UFC": 0.03, "TENNIS": 0.02
 }
 
-# ---> PASTE YOUR API KEY HERE <---
+# --- CREDENTIALS ---
 API_KEY = "d896ce4f4c52fb4b3837aef60ef574ef" 
+TELEGRAM_TOKEN = "7786273213:AAH_reyqYhuiw5UyujV7KEVoN4dDmFVjPNM"
+TELEGRAM_CHAT_ID = "5059837143"
 
 SPORT_CONFIGS = {
     "basketball_ncaab": {"name": "NCAAB", "avg": 75.0, "var": 10.0, "url": "https://www.sports-reference.com/cbb/seasons/2026-ratings.html"},
@@ -29,7 +31,21 @@ SPORT_CONFIGS = {
 }
 
 # ==========================================
-# 2. INTELLIGENCE GATHERING (LIVE + BACKUP)
+# 2. TELEGRAM SIGNAL BROADCASTER
+# ==========================================
+def send_telegram_alert(message):
+    if TELEGRAM_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN_HERE":
+        return # Skip if token isn't set yet
+        
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    try:
+        requests.post(url, json=payload, timeout=10)
+    except Exception as e:
+        print(f"⚠️ Telegram Alert Failed: {e}")
+
+# ==========================================
+# 3. INTELLIGENCE GATHERING (LIVE + BACKUP)
 # ==========================================
 def load_backup_intel(sport_name):
     if os.path.exists("syndicate_ratings.csv"):
@@ -60,7 +76,8 @@ def fetch_global_intelligence():
 
             df_list = pd.read_html(io.StringIO(res.text), flavor='lxml')
             df = df_list[0]
-            if isinstance(df.columns, pd.MultiIndex): df.columns = df.columns.get_level_values(-1)
+            if isinstance(df.columns, pd.MultiIndex): 
+                df.columns = df.columns.get_level_values(-1)
             
             if config["name"] == "NCAAB": 
                 intel["NCAAB"] = pd.Series(df.SRS.values, index=df['School']).to_dict()
@@ -90,7 +107,7 @@ def fetch_global_intelligence():
     return intel
 
 # ==========================================
-# 3. MONTE CARLO CORE
+# 4. MONTE CARLO CORE
 # ==========================================
 def calculate_ev(win_prob, ml):
     payout = (ml/100 + 1) if ml > 0 else (100/abs(ml) + 1)
@@ -115,12 +132,13 @@ def simulate_match(away, home, intel, config):
     return np.sum(h_sims > a_sims) / 100000
 
 # ==========================================
-# 4. EXECUTION LOOP
+# 5. EXECUTION LOOP
 # ==========================================
 def run_global_engine():
     print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] 🚀 SYNDICATE ENGINE INITIALIZED")
     global_intel = fetch_global_intelligence()
     results = []
+    strong_plays = []
     
     for api_key, config in SPORT_CONFIGS.items():
         url = f"https://api.the-odds-api.com/v4/sports/{api_key}/odds/"
@@ -138,16 +156,24 @@ def run_global_engine():
                         for m in b.get('markets', []):
                             if m['key'] == 'h2h':
                                 for o in m['outcomes']:
-                                    if o['name'] == h_t and o['price'] > best_ml: best_ml = o['price']
+                                    if o['name'] == h_t and o['price'] > best_ml: 
+                                        best_ml = o['price']
                     
                     if best_ml == -10000: continue
                     prob = simulate_match(a_t, h_t, global_intel, config)
                     ev = calculate_ev(prob, best_ml)
                     
                     target = EV_THRESHOLDS.get(config["name"], 0.03)
-                    if ev >= (target + 0.02): rating = "🥇⭐⭐⭐⭐ STRONG"
-                    elif ev >= target: rating = "🥈⭐⭐⭐ VALUE"
-                    else: rating = "❌ PASS"
+                    
+                    # Grade the Edge
+                    if ev >= (target + 0.02): 
+                        rating = "🥇⭐⭐⭐⭐ STRONG"
+                        alert_msg = f"🚨 *STRONG PLAY DETECTED*\n\n*Sport:* {config['name']}\n*Match:* {a_t} @ {h_t}\n*Bet:* {h_t} ML ({best_ml})\n*EV Edge:* {round(ev*100, 2)}%"
+                        strong_plays.append(alert_msg)
+                    elif ev >= target: 
+                        rating = "🥈⭐⭐⭐ VALUE"
+                    else: 
+                        rating = "❌ PASS"
 
                     results.append({
                         "Timestamp": datetime.datetime.now().strftime("%H:%M"),
@@ -155,16 +181,27 @@ def run_global_engine():
                         "Bet": f"{h_t} ML", "Odds": best_ml,
                         "EV": f"{round(ev*100, 2)}%", "QES Rating": rating
                     })
-        except: continue
+        except Exception as e: 
+            print(f"⚠️ Odds Fetch Error for {config['name']}: {e}")
+            continue
 
     if results:
         pd.DataFrame(results).to_csv("ev_log.csv", index=False)
         try:
             subprocess.run(["git", "add", "."], check=True)
-            subprocess.run(["git", "commit", "-m", "Master Global Intelligence Sync"], check=True)
+            subprocess.run(["git", "commit", "-m", "Signal Sync"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("\n☁️ SYNDICATE TERMINAL UPDATED (ALL SYSTEMS GO).")
-        except: print("⚠️ Git push failed.")
+            
+            # Fire Telegram Alerts
+            for play in strong_plays:
+                send_telegram_alert(play)
+                print(f"📣 Signal Sent to Telegram: {play.splitlines()[2]}")
+                
+        except Exception as e: 
+            print(f"⚠️ Git Push Failed: {e}")
+    else:
+        print("⚠️ No data collected.")
 
 if __name__ == "__main__":
     run_global_engine()
