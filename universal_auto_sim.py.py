@@ -132,7 +132,7 @@ def simulate_match(away, home, intel, config):
     return np.sum(h_sims > a_sims) / 100000
 
 # ==========================================
-# 5. EXECUTION LOOP
+# 5. EXECUTION LOOP (SNIPER MODE)
 # ==========================================
 def run_global_engine():
     print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] 🚀 SYNDICATE ENGINE INITIALIZED")
@@ -160,13 +160,24 @@ def run_global_engine():
                                         best_ml = o['price']
                     
                     if best_ml == -10000: continue
+                    
+                    # Run Simulation
                     prob = simulate_match(a_t, h_t, global_intel, config)
                     ev = calculate_ev(prob, best_ml)
                     
+                    # ---- THE SNIPER FILTER ----
+                    # Check if the engine actually has data for these teams
+                    sport_intel = global_intel.get(config["name"], {})
+                    has_data = False
+                    for key in sport_intel.keys():
+                        if str(a_t) in str(key) or str(h_t) in str(key):
+                            has_data = True
+                            break
+                    
                     target = EV_THRESHOLDS.get(config["name"], 0.03)
                     
-                    # Grade the Edge
-                    if ev >= (target + 0.02): 
+                    # Grade the Edge (Only flag STRONG if we actually have data)
+                    if ev >= (target + 0.02) and has_data: 
                         rating = "🥇⭐⭐⭐⭐ STRONG"
                         alert_msg = f"🚨 *STRONG PLAY DETECTED*\n\n*Sport:* {config['name']}\n*Match:* {a_t} @ {h_t}\n*Bet:* {h_t} ML ({best_ml})\n*EV Edge:* {round(ev*100, 2)}%"
                         strong_plays.append(alert_msg)
@@ -189,7 +200,7 @@ def run_global_engine():
         pd.DataFrame(results).to_csv("ev_log.csv", index=False)
         try:
             subprocess.run(["git", "add", "."], check=True)
-            subprocess.run(["git", "commit", "-m", "Signal Sync"], check=True)
+            subprocess.run(["git", "commit", "-m", "Signal Sync - Sniper Mode"], check=True)
             subprocess.run(["git", "push"], check=True)
             print("\n☁️ SYNDICATE TERMINAL UPDATED (ALL SYSTEMS GO).")
             
@@ -197,6 +208,7 @@ def run_global_engine():
             for play in strong_plays:
                 send_telegram_alert(play)
                 print(f"📣 Signal Sent to Telegram: {play.splitlines()[2]}")
+                time.sleep(0.5) # Slight delay so Telegram doesn't block the bot for spamming
                 
         except Exception as e: 
             print(f"⚠️ Git Push Failed: {e}")
