@@ -34,15 +34,13 @@ SPORT_CONFIGS = {
 # 2. TELEGRAM SIGNAL BROADCASTER
 # ==========================================
 def send_telegram_alert(message):
-    if TELEGRAM_TOKEN == "7786273213:AAH_reyqYhuiw5UyujV7KEVoN4dDmFVjPNM":
+    if TELEGRAM_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN_HERE":
         return 
         
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
     try:
-        res = requests.post(url, json=payload, timeout=10)
-        if res.status_code != 200:
-            print(f"⚠️ Telegram Rejected Message: {res.text}")
+        requests.post(url, json=payload, timeout=10)
     except Exception as e:
         print(f"⚠️ Telegram Alert Failed: {e}")
 
