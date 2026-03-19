@@ -1,19 +1,37 @@
 Sport,Team,Rating
-NBA,Boston Celtics,10.2
-NBA,Denver Nuggets,8.5
-NBA,Milwaukee Bucks,6.1
-NBA,Oklahoma City Thunder,7.2
-NBA,Minnesota Timberwolves,6.8
-SOCCER,Manchester City,2.5
-SOCCER,Liverpool,2.3
-SOCCER,Arsenal,2.2
-SOCCER,Real Madrid,2.1
-SOCCER,Bayern Munich,1.9
-UFC,Jon Jones,10.0
-UFC,Stipe Miocic,8.5
-UFC,Conor McGregor,7.0
-UFC,Dustin Poirier,9.0
-UFC,Alex Pereira,9.5
-UFC,Tom Aspinall,9.2
-UFC,Islam Makhachev,9.8
-UFC,Sean O'Malley,8.5
+NBA,NBA_Team_A,54.32
+NBA,NBA_Team_B,56.69
+NBA,NBA_Team_C,57.59
+NBA,NBA_Team_D,53.55
+NCAAB,NCAAB_Team_A,55.03
+NCAAB,NCAAB_Team_B,55.26
+NCAAB,NCAAB_Team_C,60.55
+NCAAB,NCAAB_Team_D,50.1
+NFL,NFL_Team_A,54.99
+NFL,NFL_Team_B,56.47
+NFL,NFL_Team_C,54.47
+NFL,NFL_Team_D,53.74
+NCAAF,NCAAF_Team_A,53.74
+NCAAF,NCAAF_Team_B,67.43
+NCAAF,NCAAF_Team_C,53.27
+NCAAF,NCAAF_Team_D,64.53
+NHL,NHL_Team_A,47.13
+NHL,NHL_Team_B,52.91
+NHL,NHL_Team_C,55.63
+NHL,NHL_Team_D,49.65
+MLB,MLB_Team_A,57.85
+MLB,MLB_Team_B,60.05
+MLB,MLB_Team_C,51.86
+MLB,MLB_Team_D,54.11
+SOCCER,SOCCER_Team_A,57.01
+SOCCER,SOCCER_Team_B,50.21
+SOCCER,SOCCER_Team_C,50.74
+SOCCER,SOCCER_Team_D,54.04
+UFC,UFC_Team_A,49.44
+UFC,UFC_Team_B,59.4
+UFC,UFC_Team_C,56.77
+UFC,UFC_Team_D,54.24
+TENNIS,TENNIS_Team_A,54.38
+TENNIS,TENNIS_Team_B,55.94
+TENNIS,TENNIS_Team_C,54.81
+TENNIS,TENNIS_Team_D,53.4
