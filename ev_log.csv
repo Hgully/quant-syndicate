@@ -1,100 +1,101 @@
 Timestamp,Sport,Game,Bet,Odds,EV,QES Rating
-17:24,NCAAB,McNeese Cowboys @ Vanderbilt Commodores,Vanderbilt Commodores ML,-700,3.55%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,VCU Rams @ North Carolina Tar Heels,North Carolina Tar Heels ML,-135,64.99%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Texas Longhorns @ BYU Cougars,BYU Cougars ML,-140,-68.35%,❌ PASS
-17:24,NCAAB,Texas A&M Aggies @ Saint Mary's Gaels,Saint Mary's Gaels ML,-145,6.21%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Illinois Fighting Illini ML,-8000,-0.31%,❌ PASS
-17:24,NCAAB,Saint Louis Billikens @ Georgia Bulldogs,Georgia Bulldogs ML,-135,15.1%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Gonzaga Bulldogs ML,-3500,0.78%,❌ PASS
-17:24,NCAAB,Idaho Vandals @ Houston Cougars,Houston Cougars ML,-8000,-0.49%,❌ PASS
-17:24,NCAAB,Santa Clara Broncos @ Kentucky Wildcats,Kentucky Wildcats ML,-150,16.8%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Akron Zips @ Texas Tech Red Raiders,Texas Tech Red Raiders ML,-305,16.63%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Wright St Raiders @ Virginia Cavaliers,Virginia Cavaliers ML,-2200,0.54%,❌ PASS
-17:24,NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Iowa State Cyclones ML,-7500,-26.26%,❌ PASS
-17:24,NCAAB,Hofstra Pride @ Alabama Crimson Tide,Alabama Crimson Tide ML,-750,6.26%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Utah State Aggies @ Villanova Wildcats,Villanova Wildcats ML,113,21.37%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Miami (OH) RedHawks @ Tennessee Volunteers,Tennessee Volunteers ML,-550,9.1%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Iowa Hawkeyes @ Clemson Tigers,Clemson Tigers ML,118,18.15%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Northern Iowa Panthers @ St. John's Red Storm,St. John's Red Storm ML,-525,-83.67%,❌ PASS
-17:24,NCAAB,UCF Knights @ UCLA Bruins,UCLA Bruins ML,-230,4.09%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Queens University Royals @ Purdue Boilermakers,Purdue Boilermakers ML,-8000,-0.78%,❌ PASS
-17:24,NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Kansas Jayhawks ML,-1100,4.57%,🥈⭐⭐⭐ VALUE
-17:24,NCAAB,Furman Paladins @ UConn Huskies,UConn Huskies ML,-3500,-29.79%,❌ PASS
-17:24,NCAAB,Missouri Tigers @ Miami Hurricanes,Miami Hurricanes ML,-125,-55.13%,❌ PASS
-17:24,NCAAB,TCU Horned Frogs @ Duke Blue Devils,Duke Blue Devils ML,-550,17.42%,🥈⭐⭐⭐ VALUE
-17:24,NBA,Detroit Pistons @ Washington Wizards,Washington Wizards ML,781,392.13%,🥈⭐⭐⭐ VALUE
-17:24,NBA,Orlando Magic @ Charlotte Hornets,Charlotte Hornets ML,-209,-18.26%,❌ PASS
-17:24,NBA,Cleveland Cavaliers @ Chicago Bulls,Chicago Bulls ML,425,191.17%,🥈⭐⭐⭐ VALUE
-17:24,NBA,Los Angeles Clippers @ New Orleans Pelicans,New Orleans Pelicans ML,-130,-1.27%,❌ PASS
-17:24,NBA,Los Angeles Lakers @ Miami Heat,Miami Heat ML,-200,-16.57%,❌ PASS
-17:24,NBA,Phoenix Suns @ San Antonio Spurs,San Antonio Spurs ML,-444,-31.6%,❌ PASS
-17:24,NBA,Milwaukee Bucks @ Utah Jazz,Utah Jazz ML,210,28.67%,🥇⭐⭐⭐⭐ STRONG
-17:24,NBA,Philadelphia 76ers @ Sacramento Kings,Sacramento Kings ML,130,28.0%,🥈⭐⭐⭐ VALUE
-17:24,NHL,Winnipeg Jets @ Boston Bruins,Boston Bruins ML,-140,-2.88%,❌ PASS
-17:24,NHL,New York Rangers @ Columbus Blue Jackets,Columbus Blue Jackets ML,-215,-10.02%,❌ PASS
-17:24,NHL,Montréal Canadiens @ Detroit Red Wings,Detroit Red Wings ML,-104,3.91%,🥈⭐⭐⭐ VALUE
-17:24,NHL,New York Islanders @ Ottawa Senators,Ottawa Senators ML,-121,2.93%,🥈⭐⭐⭐ VALUE
-17:24,NHL,Chicago Blackhawks @ Minnesota Wild,Minnesota Wild ML,-200,-19.34%,❌ PASS
-17:24,NHL,Seattle Kraken @ Nashville Predators,Nashville Predators ML,-130,-4.76%,❌ PASS
-17:24,NHL,Florida Panthers @ Edmonton Oilers,Edmonton Oilers ML,-152,-1.61%,❌ PASS
-17:24,NHL,Buffalo Sabres @ San Jose Sharks,San Jose Sharks ML,128,-0.85%,❌ PASS
-17:24,NHL,Tampa Bay Lightning @ Vancouver Canucks,Vancouver Canucks ML,260,39.04%,🥇⭐⭐⭐⭐ STRONG
-17:24,NHL,Utah Mammoth @ Vegas Golden Knights,Vegas Golden Knights ML,-130,-5.18%,❌ PASS
-17:24,NHL,Philadelphia Flyers @ Los Angeles Kings,Los Angeles Kings ML,-170,-9.9%,❌ PASS
-17:24,NHL,Carolina Hurricanes @ Toronto Maple Leafs,Toronto Maple Leafs ML,183,6.17%,🥇⭐⭐⭐⭐ STRONG
-17:24,NHL,New Jersey Devils @ Washington Capitals,Washington Capitals ML,-128,10.25%,🥇⭐⭐⭐⭐ STRONG
-17:24,NHL,Colorado Avalanche @ Chicago Blackhawks,Chicago Blackhawks ML,245,84.96%,🥈⭐⭐⭐ VALUE
-17:24,NHL,Florida Panthers @ Calgary Flames,Calgary Flames ML,-105,15.6%,🥇⭐⭐⭐⭐ STRONG
-17:24,NHL,Anaheim Ducks @ Utah Mammoth,Utah Mammoth ML,-120,-1.6%,❌ PASS
-17:24,MLB,New York Yankees @ San Francisco Giants,San Francisco Giants ML,104,6.26%,🥈⭐⭐⭐ VALUE
-17:24,MLB,Pittsburgh Pirates @ New York Mets,New York Mets ML,-128,-6.8%,❌ PASS
-17:24,MLB,Chicago White Sox @ Milwaukee Brewers,Milwaukee Brewers ML,-197,-21.33%,❌ PASS
-17:24,MLB,Washington Nationals @ Chicago Cubs,Chicago Cubs ML,-198,-21.37%,❌ PASS
-17:24,MLB,Minnesota Twins @ Baltimore Orioles,Baltimore Orioles ML,-162,-15.3%,❌ PASS
-17:24,MLB,Boston Red Sox @ Cincinnati Reds,Cincinnati Reds ML,135,23.14%,🥈⭐⭐⭐ VALUE
-17:24,MLB,Detroit Tigers @ San Diego Padres,San Diego Padres ML,126,17.96%,🥈⭐⭐⭐ VALUE
-17:24,MLB,Los Angeles Angels @ Houston Astros,Houston Astros ML,-190,-20.22%,❌ PASS
-17:24,MLB,Texas Rangers @ Philadelphia Phillies,Philadelphia Phillies ML,-134,-8.91%,❌ PASS
-17:24,MLB,Tampa Bay Rays @ St. Louis Cardinals,St. Louis Cardinals ML,100,4.64%,🥈⭐⭐⭐ VALUE
-17:24,MLB,Arizona Diamondbacks @ Los Angeles Dodgers,Los Angeles Dodgers ML,-212,-22.5%,❌ PASS
-17:24,MLB,Cleveland Guardians @ Seattle Mariners,Seattle Mariners ML,-160,-15.13%,❌ PASS
-17:24,SOCCER,Manchester United @ Bournemouth,Bournemouth ML,225,77.74%,🥈⭐⭐⭐ VALUE
-17:24,SOCCER,Liverpool @ Brighton and Hove Albion,Brighton and Hove Albion ML,214,-66.14%,❌ PASS
-17:24,SOCCER,Burnley @ Fulham,Fulham ML,-173,-13.43%,❌ PASS
-17:24,SOCCER,Chelsea @ Everton,Everton ML,256,94.79%,🥈⭐⭐⭐ VALUE
-17:24,SOCCER,Brentford @ Leeds United,Leeds United ML,151,37.36%,🥈⭐⭐⭐ VALUE
-17:24,SOCCER,Sunderland @ Newcastle United,Newcastle United ML,-150,-8.99%,❌ PASS
-17:24,SOCCER,West Ham United @ Aston Villa,Aston Villa ML,100,9.83%,🥈⭐⭐⭐ VALUE
-17:24,SOCCER,Nottingham Forest @ Tottenham Hotspur,Tottenham Hotspur ML,130,25.98%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Rafael Calderon @ Borja Garcia,Borja Garcia ML,-155,-17.23%,❌ PASS
-17:24,UFC,Claudio Pacella @ David Mora,David Mora ML,475,189.31%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Ernesto Schisano @ Mattia Giordano,Mattia Giordano ML,250,76.98%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Mathys Duragrin @ Ignacio Campos,Ignacio Campos ML,-210,-25.23%,❌ PASS
-17:24,UFC,Italo Gomes @ Manuel Del Valle,Manuel Del Valle ML,-300,-32.8%,❌ PASS
-17:24,UFC,Luciano Pereira @ Kevin Cordero,Kevin Cordero ML,166,34.6%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Adam Borics @ AJ McKee,AJ McKee ML,-330,-34.28%,❌ PASS
-17:24,UFC,Fabian Edwards @ Costello Van Steenis,Costello Van Steenis ML,100,1.5%,❌ PASS
-17:24,UFC,Mark Ewen @ Gino van Steenis,Gino van Steenis ML,155,27.97%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Jose Augusto @ Linton Vassell,Linton Vassell ML,-125,-9.62%,❌ PASS
-17:24,UFC,Ali Taleb @ Marin Vetrila,Marin Vetrila ML,-300,-32.75%,❌ PASS
-17:24,UFC,Christian Soda @ Callum Haughian,Callum Haughian ML,-150,-15.78%,❌ PASS
-17:24,UFC,Daniel Konrad @ Jordan Vucenic,Jordan Vucenic ML,-155,-16.44%,❌ PASS
-17:24,UFC,George McManus @ Joe Middleton,Joe Middleton ML,-500,-39.27%,❌ PASS
-17:24,UFC,Leon Naumann @ Steven Hill,Steven Hill ML,-125,-8.91%,❌ PASS
-17:24,UFC,Weslley Maia @ Ollie Sarwa,Ollie Sarwa ML,155,29.15%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Benita van Rooij @ Jacinta Austin,Jacinta Austin ML,-180,-21.68%,❌ PASS
-17:24,UFC,Yassin Najid @ Franco Tenaglia,Franco Tenaglia ML,-490,-39.33%,❌ PASS
-17:24,UFC,Melissa Mullins @ Luana Carolina,Luana Carolina ML,-130,-10.87%,❌ PASS
-17:24,UFC,Shanelle Dyer @ Ravena Oliveira,Ravena Oliveira ML,375,140.5%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Abdul-Kareem Al-Selwady @ Shem Rock,Shem Rock ML,110,6.12%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Mario Pinto @ Felipe Franco,Felipe Franco ML,700,304.86%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Mantas Kondratavicius @ Antonio Trocoli,Antonio Trocoli ML,550,226.51%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Louie Sutherland @ Brando Pericic,Brando Pericic ML,-250,-29.31%,❌ PASS
-17:24,UFC,Nathaniel Wood @ Losene Keita,Losene Keita ML,-230,-28.01%,❌ PASS
-17:24,UFC,Mason Jones @ Axel Sola,Axel Sola ML,115,8.68%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Kurtis Campbell @ Danny Silva,Danny Silva ML,205,53.95%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Christian Leroy Duncan @ Roman Dolidze,Roman Dolidze ML,385,145.05%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Iwo Baraniewski @ Austen Lane,Austen Lane ML,500,203.19%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Michael Page @ Sam Patterson,Sam Patterson ML,163,33.19%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Luke Riley @ Michael Aswell,Michael Aswell ML,190,46.28%,🥈⭐⭐⭐ VALUE
-17:24,UFC,Lerone Murphy @ Movsar Evloev,Movsar Evloev ML,-240,-27.86%,❌ PASS
+17:29,NCAAB,McNeese Cowboys @ Vanderbilt Commodores,Vanderbilt Commodores ML,-700,3.48%,❌ PASS
+17:29,NCAAB,VCU Rams @ North Carolina Tar Heels,North Carolina Tar Heels ML,-135,64.77%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Texas Longhorns @ BYU Cougars,BYU Cougars ML,-140,-68.22%,❌ PASS
+17:29,NCAAB,Texas A&M Aggies @ Saint Mary's Gaels,Saint Mary's Gaels ML,-145,5.93%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Pennsylvania Quakers @ Illinois Fighting Illini,Illinois Fighting Illini ML,-8000,-0.36%,❌ PASS
+17:29,NCAAB,Saint Louis Billikens @ Georgia Bulldogs,Georgia Bulldogs ML,-135,14.69%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Kennesaw St Owls @ Gonzaga Bulldogs,Gonzaga Bulldogs ML,-3500,0.66%,❌ PASS
+17:29,NCAAB,Idaho Vandals @ Houston Cougars,Houston Cougars ML,-8000,-0.52%,❌ PASS
+17:29,NCAAB,Santa Clara Broncos @ Kentucky Wildcats,Kentucky Wildcats ML,-150,16.6%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Akron Zips @ Texas Tech Red Raiders,Texas Tech Red Raiders ML,-305,16.37%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Wright St Raiders @ Virginia Cavaliers,Virginia Cavaliers ML,-2200,0.62%,❌ PASS
+17:29,NCAAB,Tennessee St Tigers @ Iowa State Cyclones,Iowa State Cyclones ML,-7500,-26.37%,❌ PASS
+17:29,NCAAB,Hofstra Pride @ Alabama Crimson Tide,Alabama Crimson Tide ML,-750,6.17%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Utah State Aggies @ Villanova Wildcats,Villanova Wildcats ML,113,20.81%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Miami (OH) RedHawks @ Tennessee Volunteers,Tennessee Volunteers ML,-550,9.23%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Iowa Hawkeyes @ Clemson Tigers,Clemson Tigers ML,118,18.2%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Northern Iowa Panthers @ St. John's Red Storm,St. John's Red Storm ML,-525,-83.77%,❌ PASS
+17:29,NCAAB,UCF Knights @ UCLA Bruins,UCLA Bruins ML,-230,4.27%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Queens University Royals @ Purdue Boilermakers,Purdue Boilermakers ML,-8000,-0.71%,❌ PASS
+17:29,NCAAB,Cal Baptist Lancers @ Kansas Jayhawks,Kansas Jayhawks ML,-1100,4.69%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Furman Paladins @ UConn Huskies,UConn Huskies ML,-3500,-29.85%,❌ PASS
+17:29,NCAAB,Missouri Tigers @ Miami Hurricanes,Miami Hurricanes ML,-125,-55.11%,❌ PASS
+17:29,NCAAB,TCU Horned Frogs @ Duke Blue Devils,Duke Blue Devils ML,-550,17.43%,🥈⭐⭐⭐ VALUE
+17:29,NCAAB,Vanderbilt Commodores @ Nebraska Cornhuskers,Nebraska Cornhuskers ML,100,12.4%,🥈⭐⭐⭐ VALUE
+17:29,NBA,Detroit Pistons @ Washington Wizards,Washington Wizards ML,781,390.06%,🥈⭐⭐⭐ VALUE
+17:29,NBA,Orlando Magic @ Charlotte Hornets,Charlotte Hornets ML,-209,-17.63%,❌ PASS
+17:29,NBA,Cleveland Cavaliers @ Chicago Bulls,Chicago Bulls ML,425,192.12%,🥈⭐⭐⭐ VALUE
+17:29,NBA,Los Angeles Clippers @ New Orleans Pelicans,New Orleans Pelicans ML,-130,-1.11%,❌ PASS
+17:29,NBA,Los Angeles Lakers @ Miami Heat,Miami Heat ML,-210,-17.97%,❌ PASS
+17:29,NBA,Phoenix Suns @ San Antonio Spurs,San Antonio Spurs ML,-444,-32.07%,❌ PASS
+17:29,NBA,Milwaukee Bucks @ Utah Jazz,Utah Jazz ML,210,27.98%,🥇⭐⭐⭐⭐ STRONG
+17:29,NBA,Philadelphia 76ers @ Sacramento Kings,Sacramento Kings ML,130,27.9%,🥈⭐⭐⭐ VALUE
+17:29,NHL,Winnipeg Jets @ Boston Bruins,Boston Bruins ML,-140,-3.06%,❌ PASS
+17:29,NHL,New York Rangers @ Columbus Blue Jackets,Columbus Blue Jackets ML,-215,-9.82%,❌ PASS
+17:29,NHL,Montréal Canadiens @ Detroit Red Wings,Detroit Red Wings ML,-104,4.87%,🥇⭐⭐⭐⭐ STRONG
+17:29,NHL,New York Islanders @ Ottawa Senators,Ottawa Senators ML,-121,2.74%,🥈⭐⭐⭐ VALUE
+17:29,NHL,Chicago Blackhawks @ Minnesota Wild,Minnesota Wild ML,-200,-19.45%,❌ PASS
+17:29,NHL,Seattle Kraken @ Nashville Predators,Nashville Predators ML,-130,-4.96%,❌ PASS
+17:29,NHL,Florida Panthers @ Edmonton Oilers,Edmonton Oilers ML,-152,-2.01%,❌ PASS
+17:29,NHL,Buffalo Sabres @ San Jose Sharks,San Jose Sharks ML,128,-1.54%,❌ PASS
+17:29,NHL,Tampa Bay Lightning @ Vancouver Canucks,Vancouver Canucks ML,260,39.29%,🥇⭐⭐⭐⭐ STRONG
+17:29,NHL,Utah Mammoth @ Vegas Golden Knights,Vegas Golden Knights ML,-130,-4.91%,❌ PASS
+17:29,NHL,Philadelphia Flyers @ Los Angeles Kings,Los Angeles Kings ML,-170,-10.24%,❌ PASS
+17:29,NHL,Carolina Hurricanes @ Toronto Maple Leafs,Toronto Maple Leafs ML,183,7.29%,🥇⭐⭐⭐⭐ STRONG
+17:29,NHL,New Jersey Devils @ Washington Capitals,Washington Capitals ML,-128,10.38%,🥇⭐⭐⭐⭐ STRONG
+17:29,NHL,Colorado Avalanche @ Chicago Blackhawks,Chicago Blackhawks ML,245,85.29%,🥈⭐⭐⭐ VALUE
+17:29,NHL,Florida Panthers @ Calgary Flames,Calgary Flames ML,-105,15.38%,🥇⭐⭐⭐⭐ STRONG
+17:29,NHL,Anaheim Ducks @ Utah Mammoth,Utah Mammoth ML,-120,-1.53%,❌ PASS
+17:29,MLB,New York Yankees @ San Francisco Giants,San Francisco Giants ML,104,6.57%,🥈⭐⭐⭐ VALUE
+17:29,MLB,Pittsburgh Pirates @ New York Mets,New York Mets ML,-128,-6.7%,❌ PASS
+17:29,MLB,Chicago White Sox @ Milwaukee Brewers,Milwaukee Brewers ML,-197,-21.41%,❌ PASS
+17:29,MLB,Washington Nationals @ Chicago Cubs,Chicago Cubs ML,-198,-21.4%,❌ PASS
+17:29,MLB,Minnesota Twins @ Baltimore Orioles,Baltimore Orioles ML,-162,-15.42%,❌ PASS
+17:29,MLB,Boston Red Sox @ Cincinnati Reds,Cincinnati Reds ML,135,22.94%,🥈⭐⭐⭐ VALUE
+17:29,MLB,Detroit Tigers @ San Diego Padres,San Diego Padres ML,126,18.42%,🥈⭐⭐⭐ VALUE
+17:29,MLB,Los Angeles Angels @ Houston Astros,Houston Astros ML,-190,-20.37%,❌ PASS
+17:29,MLB,Texas Rangers @ Philadelphia Phillies,Philadelphia Phillies ML,-134,-9.08%,❌ PASS
+17:29,MLB,Tampa Bay Rays @ St. Louis Cardinals,St. Louis Cardinals ML,100,4.47%,🥈⭐⭐⭐ VALUE
+17:29,MLB,Arizona Diamondbacks @ Los Angeles Dodgers,Los Angeles Dodgers ML,-212,-23.07%,❌ PASS
+17:29,MLB,Cleveland Guardians @ Seattle Mariners,Seattle Mariners ML,-160,-14.99%,❌ PASS
+17:29,SOCCER,Manchester United @ Bournemouth,Bournemouth ML,225,78.01%,🥈⭐⭐⭐ VALUE
+17:29,SOCCER,Liverpool @ Brighton and Hove Albion,Brighton and Hove Albion ML,214,-65.82%,❌ PASS
+17:29,SOCCER,Burnley @ Fulham,Fulham ML,-173,-13.99%,❌ PASS
+17:29,SOCCER,Chelsea @ Everton,Everton ML,256,93.36%,🥈⭐⭐⭐ VALUE
+17:29,SOCCER,Brentford @ Leeds United,Leeds United ML,151,37.3%,🥈⭐⭐⭐ VALUE
+17:29,SOCCER,Sunderland @ Newcastle United,Newcastle United ML,-150,-8.74%,❌ PASS
+17:29,SOCCER,West Ham United @ Aston Villa,Aston Villa ML,100,9.52%,🥈⭐⭐⭐ VALUE
+17:29,SOCCER,Nottingham Forest @ Tottenham Hotspur,Tottenham Hotspur ML,130,25.78%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Rafael Calderon @ Borja Garcia,Borja Garcia ML,-155,-16.9%,❌ PASS
+17:29,UFC,Claudio Pacella @ David Mora,David Mora ML,475,191.73%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Ernesto Schisano @ Mattia Giordano,Mattia Giordano ML,250,76.34%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Mathys Duragrin @ Ignacio Campos,Ignacio Campos ML,-210,-25.32%,❌ PASS
+17:29,UFC,Italo Gomes @ Manuel Del Valle,Manuel Del Valle ML,-300,-32.36%,❌ PASS
+17:29,UFC,Luciano Pereira @ Kevin Cordero,Kevin Cordero ML,166,34.4%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Adam Borics @ AJ McKee,AJ McKee ML,-330,-34.13%,❌ PASS
+17:29,UFC,Fabian Edwards @ Costello Van Steenis,Costello Van Steenis ML,100,1.09%,❌ PASS
+17:29,UFC,Mark Ewen @ Gino van Steenis,Gino van Steenis ML,155,29.28%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Jose Augusto @ Linton Vassell,Linton Vassell ML,-125,-8.71%,❌ PASS
+17:29,UFC,Ali Taleb @ Marin Vetrila,Marin Vetrila ML,-300,-32.72%,❌ PASS
+17:29,UFC,Christian Soda @ Callum Haughian,Callum Haughian ML,-150,-15.52%,❌ PASS
+17:29,UFC,Daniel Konrad @ Jordan Vucenic,Jordan Vucenic ML,-155,-16.62%,❌ PASS
+17:29,UFC,George McManus @ Joe Middleton,Joe Middleton ML,-500,-39.32%,❌ PASS
+17:29,UFC,Leon Naumann @ Steven Hill,Steven Hill ML,-125,-8.36%,❌ PASS
+17:29,UFC,Weslley Maia @ Ollie Sarwa,Ollie Sarwa ML,155,29.13%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Benita van Rooij @ Jacinta Austin,Jacinta Austin ML,-180,-20.96%,❌ PASS
+17:29,UFC,Yassin Najid @ Franco Tenaglia,Franco Tenaglia ML,-490,-38.77%,❌ PASS
+17:29,UFC,Melissa Mullins @ Luana Carolina,Luana Carolina ML,-130,-10.45%,❌ PASS
+17:29,UFC,Shanelle Dyer @ Ravena Oliveira,Ravena Oliveira ML,375,140.94%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Abdul-Kareem Al-Selwady @ Shem Rock,Shem Rock ML,110,6.02%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Mario Pinto @ Felipe Franco,Felipe Franco ML,700,304.94%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Mantas Kondratavicius @ Antonio Trocoli,Antonio Trocoli ML,550,229.47%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Louie Sutherland @ Brando Pericic,Brando Pericic ML,-250,-29.63%,❌ PASS
+17:29,UFC,Nathaniel Wood @ Losene Keita,Losene Keita ML,-230,-27.26%,❌ PASS
+17:29,UFC,Mason Jones @ Axel Sola,Axel Sola ML,115,8.77%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Kurtis Campbell @ Danny Silva,Danny Silva ML,205,54.9%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Christian Leroy Duncan @ Roman Dolidze,Roman Dolidze ML,385,145.21%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Iwo Baraniewski @ Austen Lane,Austen Lane ML,500,204.08%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Michael Page @ Sam Patterson,Sam Patterson ML,163,32.44%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Luke Riley @ Michael Aswell,Michael Aswell ML,190,46.98%,🥈⭐⭐⭐ VALUE
+17:29,UFC,Lerone Murphy @ Movsar Evloev,Movsar Evloev ML,-240,-28.24%,❌ PASS
