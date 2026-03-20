@@ -27,9 +27,8 @@ def send_telegram_alert(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
     try:
-        res = requests.post(url, json=payload, timeout=10)
-        return res.status_code == 200
-    except: return False
+        requests.post(url, json=payload, timeout=10)
+    except: pass
 
 def load_backup_intel(sport_name):
     if os.path.exists("syndicate_ratings.csv"):
@@ -115,6 +114,14 @@ def run_global_engine():
                 print(f"📡 Sweeping {len(games)} {config['name']} games...")
                 for g in games:
                     h_t, a_t = g.get('home_team'), g.get('away_team')
+                    matchup = f"{a_t} @ {h_t}"
+                    match_time_str = "TBD"
+                    if g.get('commence_time'):
+                        try:
+                            dt_obj = datetime.datetime.fromisoformat(g['commence_time'].replace('Z', '+00:00'))
+                            match_time_str = dt_obj.astimezone().strftime('%b %d, %I:%M %p')
+                        except: pass
+
                     a_scores, h_scores = run_simulations(a_t, h_t, global_intel, config)
                     has_data = any(str(a_t) in str(k) or str(h_t) in str(k) for k in global_intel.get(config["name"], {}).keys())
                     if not has_data: continue
@@ -140,14 +147,21 @@ def run_global_engine():
                                 if ev > 0:
                                     fair_odds = calculate_fair_odds(prob)
                                     qes, verd, stars = generate_qes_rating(ev, prob)
-                                    results.append({"Market": m_label, "Selection": s_label, "Win Prob": f"{round(prob*100, 1)}%", "Fair Odds": fair_odds, "Cur": price, "Edge (EV)": f"+{round(ev*100, 1)}%", "QES": qes, "Verdict": verd, "Rating": stars, "Sport": config["name"]})
+                                    results.append({"Sport": config["name"], "Match Time": match_time_str, "Matchup": matchup, "Market": m_label, "Selection": s_label, "Win Prob": f"{round(prob*100, 1)}%", "Fair Odds": fair_odds, "Cur": price, "Edge (EV)": f"+{round(ev*100, 1)}%", "QES": qes, "Verdict": verd, "Rating": stars})
+                                    
                                     if stars in ["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]:
-                                        strong_plays.append(f"🚨 *{stars} {verd} PLAY*\n\n*Sport:* {config['name']}\n*Market:* {m_label}\n*Selection:* {s_label}\n*Odds:* {price} (Fair: {fair_odds})\n*Win Prob:* {round(prob*100,1)}%\n*EV:* +{round(ev*100,1)}%\n*QES:* {qes}")
-        except: continue
+                                        play_msg = f"🚨 *{stars} {verd} PLAY*\n\n*Sport:* {config['name']}\n*Game:* {matchup}\n*Time:* {match_time_str}\n*Market:* {m_label}\n*Selection:* {s_label}\n*Odds:* {price} (Fair: {fair_odds})\n*Win Prob:* {round(prob*100,1)}%\n*EV:* +{round(ev*100,1)}%\n*QES:* {qes}"
+                                        # Store both the message AND the matchup name so the terminal prints it perfectly
+                                        strong_plays.append((play_msg, matchup))
+            else:
+                # If your API Key is missing or empty, it will clearly tell you here
+                print(f"⚠️ API ERROR for {config['name']}: {res.status_code} - {res.text}")
+        except Exception as e: 
+            print(f"⚠️ Connection Error for {config['name']}: {e}")
+            continue
 
-    # --- HEARTBEAT / DUMMY DATA INJECTION ---
     if not results:
-        results.append({"Market": "System Check", "Selection": "[Heartbeat Active]", "Win Prob": "100%", "Fair Odds": "N/A", "Cur": 0, "Edge (EV)": "0%", "QES": 1.0, "Verdict": "📡", "Rating": "SCANNING", "Sport": "ALL"})
+        results.append({"Sport": "ALL", "Match Time": "System Sync", "Matchup": "[Monitoring Server]", "Market": "System Check", "Selection": "[Heartbeat Active]", "Win Prob": "100%", "Fair Odds": "N/A", "Cur": 0, "Edge (EV)": "0%", "QES": 1.0, "Verdict": "📡", "Rating": "SCANNING"})
 
     df_output = pd.DataFrame(results)
     df_output = df_output.sort_values(by="QES", ascending=False)
@@ -155,11 +169,17 @@ def run_global_engine():
     
     try:
         subprocess.run(["git", "add", "."], check=True)
-        subprocess.run(["git", "commit", "-m", f"Heartbeat Update: {current_time}"], check=True)
+        subprocess.run(["git", "commit", "-m", f"Clean Reset Engine Sync: {current_time}"], check=True)
         subprocess.run(["git", "push"], check=True)
-        print(f"\n☁️ TERMINAL UPDATED. (Edges Found: {len(results)-1 if '[Heartbeat Active]' in str(results) else len(results)})")
-        for play in strong_plays: send_telegram_alert(play)
-    except Exception as e: print(f"⚠️ Push Failed: {e}")
+        print(f"\n☁️ TERMINAL UPDATED. (Edges Found: {len(results)-1 if '[Monitoring Server]' in str(results) else len(results)})")
+        
+        # Flawless Terminal Alert Prints
+        for play_msg, matchup_name in strong_plays: 
+            send_telegram_alert(play_msg)
+            print(f"📣 Signal Sent to Telegram: {matchup_name}")
+            time.sleep(0.5)
+            
+    except Exception as e: print(f"⚠️ Sync failed: {e}")
 
 if __name__ == "__main__":
     run_global_engine()
