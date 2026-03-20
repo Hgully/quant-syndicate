@@ -69,17 +69,12 @@ def fetch_global_intelligence():
             intel[config["name"]] = load_backup_intel(config["name"])
     return intel
 
-# ==========================================
-# 4. FULL MARKET MONTE CARLO (SCORES)
-# ==========================================
 def run_simulations(away, home, intel, config):
     sport_intel = intel.get(config["name"], {})
     def get_rating(team_name):
         return next((float(v) for k, v in sport_intel.items() if str(team_name) in str(k) or str(k) in str(team_name)), 0.0)
-    
     a_r, h_r = get_rating(away), get_rating(home)
     hfa = 3.5 if config["name"] == "NCAAB" else 2.4 if config["name"] == "NBA" else 0.2
-    
     a_scores = np.random.normal(config["avg"] + a_r, config["var"], 100000)
     h_scores = np.random.normal(config["avg"] + h_r + hfa, config["var"], 100000)
     return a_scores, h_scores
@@ -103,9 +98,6 @@ def generate_qes_rating(ev, prob):
     elif ev >= 0.01: return score, "🥉", "⭐⭐"
     else: return score, "LEAN", "⭐"
 
-# ==========================================
-# 5. EXECUTION LOOP
-# ==========================================
 def run_global_engine():
     current_time = datetime.datetime.now().strftime('%I:%M %p')
     print(f"\n[{current_time}] 🚀 SYNDICATE ENGINE INITIALIZED")
@@ -116,7 +108,6 @@ def run_global_engine():
     for api_key, config in SPORT_CONFIGS.items():
         url = f"https://api.the-odds-api.com/v4/sports/{api_key}/odds/"
         params = {'apiKey': API_KEY, 'regions': 'us', 'markets': 'h2h,spreads,totals', 'oddsFormat': 'american'}
-        
         try:
             res = requests.get(url, params=params)
             if res.status_code == 200:
@@ -125,9 +116,7 @@ def run_global_engine():
                 for g in games:
                     h_t, a_t = g.get('home_team'), g.get('away_team')
                     a_scores, h_scores = run_simulations(a_t, h_t, global_intel, config)
-                    
-                    sport_intel = global_intel.get(config["name"], {})
-                    has_data = any(str(a_t) in str(k) or str(h_t) in str(k) for k in sport_intel.keys())
+                    has_data = any(str(a_t) in str(k) or str(h_t) in str(k) for k in global_intel.get(config["name"], {}).keys())
                     if not has_data: continue
 
                     for b in g.get('bookmakers', [])[:1]:
@@ -137,7 +126,6 @@ def run_global_engine():
                                 selection_name = o['name']
                                 price, point = o['price'], o.get('point', 0)
                                 prob = 0
-
                                 if market_type == 'h2h':
                                     m_label, s_label = "Moneyline", f"{selection_name} ML"
                                     prob = np.sum(a_scores > h_scores)/100000 if selection_name == a_t else np.sum(h_scores > a_scores)/100000
@@ -157,16 +145,19 @@ def run_global_engine():
                                         strong_plays.append(f"🚨 *{stars} {verd} PLAY*\n\n*Sport:* {config['name']}\n*Market:* {m_label}\n*Selection:* {s_label}\n*Odds:* {price} (Fair: {fair_odds})\n*Win Prob:* {round(prob*100,1)}%\n*EV:* +{round(ev*100,1)}%\n*QES:* {qes}")
         except: continue
 
-    # --- HEARTBEAT SYNC ---
-    df_output = pd.DataFrame(results) if results else pd.DataFrame(columns=["Market", "Selection", "Win Prob", "Fair Odds", "Cur", "Edge (EV)", "QES", "Verdict", "Rating", "Sport"])
-    if not df_output.empty: df_output = df_output.sort_values(by="QES", ascending=False)
+    # --- HEARTBEAT / DUMMY DATA INJECTION ---
+    if not results:
+        results.append({"Market": "System Check", "Selection": "[Heartbeat Active]", "Win Prob": "100%", "Fair Odds": "N/A", "Cur": 0, "Edge (EV)": "0%", "QES": 1.0, "Verdict": "📡", "Rating": "SCANNING", "Sport": "ALL"})
+
+    df_output = pd.DataFrame(results)
+    df_output = df_output.sort_values(by="QES", ascending=False)
     df_output.to_csv("ev_log.csv", index=False)
     
     try:
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", f"Heartbeat Update: {current_time}"], check=True)
         subprocess.run(["git", "push"], check=True)
-        print(f"\n☁️ TERMINAL UPDATED. (Edges Found: {len(results)})")
+        print(f"\n☁️ TERMINAL UPDATED. (Edges Found: {len(results)-1 if '[Heartbeat Active]' in str(results) else len(results)})")
         for play in strong_plays: send_telegram_alert(play)
     except Exception as e: print(f"⚠️ Push Failed: {e}")
 
